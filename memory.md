@@ -127,3 +127,32 @@ ubuntu@LAPTOP-JBell:~$ vmstat --unit M -s | grep "total memory" | sed -r 's/^[[:
 ubuntu@LAPTOP-JBell:~$ vmstat --unit M -s | grep "free memory" | sed -r 's/^[[:space:]]*([[:digit:]]+).*/\1/'
 4136
 ```
+
+## lsmem
+
+<https://man7.org/linux/man-pages/man1/lsmem.1.html>
+
+```console
+ubuntu@LAPTOP-JBell:~$ lsmem
+RANGE                                  SIZE  STATE REMOVABLE BLOCK
+0x0000000000000000-0x00000000f7ffffff  3.9G online       yes  0-30
+0x0000000100000000-0x00000001ffffffff    4G online       yes 32-63
+
+Memory block size:       128M
+Total online memory:     7.9G
+Total offline memory:      0B
+```
+
+## dmidecode
+
+<https://savannah.nongnu.org/projects/dmidecode/>
+
+On WSL:
+
+```console
+ubuntu@LAPTOP-JBell:~$ sudo dmidecode
+[sudo] password for ubuntu:
+# dmidecode 3.3
+Scanning /dev/mem for entry point.
+# No SMBIOS nor DMI entry point found, sorry.
+```
