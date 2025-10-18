@@ -28,8 +28,8 @@ B
 ```console
 ubuntu@LAPTOP-JBell:~$ sort >file <<EndOfSort
 > zygote
-abacus
-EndOfSort
+> abacus
+> EndOfSort
 ubuntu@LAPTOP-JBell:~$ cat file
 abacus
 zygote
