@@ -1,0 +1,17 @@
+git checkout -b feature2
+echo "feature 2" >> fileA.txt
+git add fileA.txt
+git commit -m "add feature 2"
+git log --oneline --graph --all
+git checkout master
+git merge feature2
+git branch -d feature2
+
+git checkout -b feature3
+echo "feature 3" >> fileA.txt
+git add fileA.txt
+git commit -m "add feature 3"
+git log --oneline --graph --all
+git checkout master
+git merge feature3
+git branch -d feature3

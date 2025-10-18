@@ -1,0 +1,11 @@
+git clone git@bitbucket.org:jordanbell2357/projectb.git
+
+echo "# projectb's README" > README.md
+
+git add README.md
+
+git commit -m "add README.md"
+
+git push -u origin master
+
+git status

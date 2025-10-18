@@ -1,0 +1,17 @@
+echo "feature 1" > fileA.txt
+
+git add fileA.txt
+
+git commit -m "add feature 1"
+
+git push origin master
+
+git log --oneline
+
+git show a0fbdc5
+
+git tag
+
+git tag -a -m "includes feature 1" v0.1
+
+git push origin v0.1

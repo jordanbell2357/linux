@@ -1,0 +1,22 @@
+mkdir projecth
+cd projecth
+git init
+echo "mistake" > fileA.txt
+git add fileA.txt
+git commit -m "add fileA.txt with mistake"
+git log
+70a0
+git commit --amend -m "add fileA.txt"
+# a456281c7cb3c67e28f3fe8cee24ffe619efe8a2
+
+git checkout -b feature1
+echo "feature 1 wip" >> fileA.txt
+git add fileA.txt
+git commit -m "add feature 1 wip"
+rm fileA.txt
+echo "feature 1" > fileA.txt
+git add fileA.txt
+git commit -m "add feature 1"
+
+git checkout feature1
+git rebase -i 099af3a8326b49ef2be29a2a76847d197fe4ad15

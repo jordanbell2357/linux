@@ -1,0 +1,11 @@
+mkdir projectc
+cd projectc
+git init
+git branch
+echo "feature 1" > fileA.txt
+git add fileA.txt
+git commit -m "add feature 1"
+git branch
+
+git branch featureX
+git checkout featureX

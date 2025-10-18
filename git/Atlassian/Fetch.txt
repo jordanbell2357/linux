@@ -1,0 +1,23 @@
+git clone git@bitbucket.org:jordanbell2357/projecte.git
+cd projecte
+git log --all --oneline --graph
+echo "Fun with tracking branches." >> README.md
+git add README.md
+git commit -m "add fun line to README.md"
+git log --all --oneline --graph
+git status
+git push
+git log
+git status
+
+git clone git@bitbucket.org:jordanbell2357/projectf.git
+git log
+git fetch
+git log --all --oneline --graph
+git pull
+git log --all --oneline --graph
+touch fileA.txt
+git add fileA.txt
+git commit -m "add fileA.txt"
+git fetch
+git push

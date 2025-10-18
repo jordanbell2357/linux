@@ -1,0 +1,29 @@
+mkdir projectg
+cd projectg
+git init
+touch fileA.txt
+git add fileA.txt
+git commit -m "add fileA.txt"
+git checkout -b feature1
+echo "feature 1 wip" >> fileA.txt
+git add fileA.txt
+git commit -m "add feature 1 wip"
+git checkout master
+touch fileB.txt
+git add fileB.txt
+git commit -m "add fileB.txt"
+git log --all --oneline --graph
+git checkout feature1
+git rebase master
+
+git checkout master
+echo "feature 2" >> fileA.txt
+git add fileA.txt
+git commit -m "add feature 2"
+
+git checkout feature1
+git rebase master
+git status
+vi fileA.txt
+git add fileA.txt
+git rebase --continue

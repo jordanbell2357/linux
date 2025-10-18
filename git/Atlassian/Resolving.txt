@@ -1,0 +1,28 @@
+mkdir projectd
+cd projectd
+git init
+echo "feature 1" > fileA.txt
+git add fileA.txt
+git commit -m "add feature 1"
+git checkout -b feature2
+echo "feature 2" >> fileA.txt
+git add fileA.txt
+git commit -m "add feature 2"
+git checkout master
+echo "feature 3" >> fileA.txt
+git add fileA.txt
+git commit -m "add feature 3"
+
+git merge feature2
+git status
+cat fileA.txt
+git merge --abort
+git status
+git merge feature2
+vi fileA.txt
+git add fileA.txt
+git commit
+:q
+
+
+git branch -d feature2
