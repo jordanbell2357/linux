@@ -26,6 +26,8 @@ Enable tor daemon:
 sudo systemctl enable --now tor
 ```
 
+### nmap
+
 Check localhost with nmap <https://nmap.org/download.html>:
 
 ```console
@@ -44,7 +46,16 @@ PORT     STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 0.08 seconds
 ```
 
+### ss
+
 Checking localhost with ss <https://man7.org/linux/man-pages/man8/ss.8.html>:
+
+```console
+ubuntu@LAPTOP-JBell:~$ ss -aln | grep 9050
+tcp   LISTEN 0      4096                                    127.0.0.1:9050             0.0.0.0:*
+```
+
+### curl
 
 We're going to check our public IP address:
 
