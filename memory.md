@@ -150,9 +150,15 @@ Total offline memory:      0B
 On WSL:
 
 ```console
-ubuntu@LAPTOP-JBell:~$ sudo dmidecode
+ubuntu@LAPTOP-JBell:~$ sudo dmidecode --type 17
 [sudo] password for ubuntu:
 # dmidecode 3.3
 Scanning /dev/mem for entry point.
 # No SMBIOS nor DMI entry point found, sorry.
+```
+
+Using Ubuntu on VMware Workstation:
+
+```console
+sudo dmidecode --type 17
 ```
