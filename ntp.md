@@ -91,8 +91,6 @@ clk_jitter=0.000, clk_wander=117.489, tai=37, leapsec=201701010000,
 expire=202512280000
 ```
 
-
-
 ## sntp
 
 ```console
