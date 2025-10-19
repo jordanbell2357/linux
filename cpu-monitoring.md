@@ -142,3 +142,9 @@ Linux 6.6.87.2-microsoft-standard-WSL2 (LAPTOP-JBell)   10/13/25        _x86_64_
 
 Average:        all     12.94      0.00     30.32      0.00      0.00     56.74
 ```
+
+## perf
+
+<https://perfwiki.github.io/main/>
+
+<https://www.brendangregg.com/perf.html>
