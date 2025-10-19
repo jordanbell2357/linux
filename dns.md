@@ -2,6 +2,8 @@
 
 <https://www.cloudflare.com/learning/dns/dns-records/>
 
+<https://zytrax.com/books/dns/>
+
 <https://www.cloudflare.com/learning/dns/what-is-1.1.1.1/>
 
 ## nslookup
@@ -139,33 +141,6 @@ wikipedia.org.          43      IN      A       208.80.154.224
 
 ```
 
-### dig mx
-
-```console
-ubuntu@LAPTOP-JBell:~$ dig wikipedia.org mx
-
-; <<>> DiG 9.18.30-0ubuntu0.22.04.2-Ubuntu <<>> wikipedia.org mx
-;; global options: +cmd
-;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62165
-;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
-
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 1232
-;; QUESTION SECTION:
-;wikipedia.org.                 IN      MX
-
-;; ANSWER SECTION:
-wikipedia.org.          300     IN      MX      10 mx-in1001.wikimedia.org.
-wikipedia.org.          300     IN      MX      10 mx-in2001.wikimedia.org.
-
-;; Query time: 48 msec
-;; SERVER: 10.255.255.254#53(10.255.255.254) (UDP)
-;; WHEN: Sat Oct 18 14:54:34 EDT 2025
-;; MSG SIZE  rcvd: 104
-
-```
-
 ### dig @
 
 ```console
@@ -246,6 +221,20 @@ google.com descriptive text "onetrust-domain-verification=de01ed21f2fa4d8781cbc3
 google.com descriptive text "MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB"
 ```
 
+## getent
+
+<https://linux.die.net/man/1/getent>
+
+```console
+ubuntu@LAPTOP-JBell:~$ getent ahosts wikipedia.org
+208.80.154.224  STREAM wikipedia.org
+208.80.154.224  DGRAM
+208.80.154.224  RAW
+2620:0:861:ed1a::1 STREAM
+2620:0:861:ed1a::1 DGRAM
+2620:0:861:ed1a::1 RAW
+```
+
 ## whois (WHOIS Protocol, RFC 3912)
 
 <https://www.iana.org/whois>
@@ -279,3 +268,13 @@ ubuntu@LAPTOP-JBell:~$ whois google.com
    URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
 >>> Last update of whois database: 2025-10-18T19:06:54Z <<<
 ```
+
+## rdap
+
+<https://www.icann.org/en/contracted-parties/registry-operators/resources/registration-data-access-protocol>
+
+> The Registration Data Access Protocol (RDAP) enables users to access current registration data and was created as an eventual replacement for the WHOIS protocol. RDAP was developed by the technical community in the Internet Engineering Task Force (IETF).
+>
+> RDAP is a protocol that delivers registration data like WHOIS, but its implementation will change and standardize data access and query response formats. RDAP has several advantages over the WHOIS protocol, including support for internationalization, secure access to data, and the ability to provide differentiated access to registration data.
+
+<https://www.openrdap.org/>
