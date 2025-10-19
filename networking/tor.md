@@ -142,4 +142,4 @@ Weather report: Amsterdam, Netherlands
 Follow @igor_chubin for wttr.in updates
 ```
 
-<div style="background-color:black;">hi</div>
+<span style="color:white; background-color:black;">hi</span>
