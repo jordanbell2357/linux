@@ -9,27 +9,27 @@
 <https://www.linode.com/docs/guides/how-to-use-nslookup-command/>
 
 ```console
-ubuntu@LAPTOP-JBell:~$ nslookup time.google.com
+ubuntu@LAPTOP-JBell:~$ nslookup wikipedia.org
 Server:         10.255.255.254
 Address:        10.255.255.254#53
 
 Non-authoritative answer:
-Name:   time.google.com
-Address: 216.239.35.0
-Name:   time.google.com
-Address: 216.239.35.8
-Name:   time.google.com
-Address: 216.239.35.12
-Name:   time.google.com
-Address: 216.239.35.4
-Name:   time.google.com
-Address: 2001:4860:4806:4::
-Name:   time.google.com
-Address: 2001:4860:4806:c::
-Name:   time.google.com
-Address: 2001:4860:4806:8::
-Name:   time.google.com
-Address: 2001:4860:4806::
+Name:   wikipedia.org
+Address: 208.80.154.224
+Name:   wikipedia.org
+Address: 2620:0:861:ed1a::1
+```
+
+```console
+ubuntu@LAPTOP-JBell:~$ nslookup wikipedia.org 9.9.9.9
+Server:         9.9.9.9
+Address:        9.9.9.9#53
+
+Non-authoritative answer:
+Name:   wikipedia.org
+Address: 208.80.154.224
+Name:   wikipedia.org
+Address: 2620:0:861:ed1a::1
 ```
 
 ### `-type=ns`
