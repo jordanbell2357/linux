@@ -79,6 +79,51 @@ ubuntu@LAPTOP-JBell:~$ torify curl https://check.torproject.org/api/ip
 {"IsTor":true,"IP":"45.84.107.97"}
 ```
 
+<https://www.cia.gov/stories/story/cias-latest-layer-an-onion-site/>
+
+> ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion
+
+```console
+ubuntu@LAPTOP-JBell:~$ torify curl -s ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion | html2text
+<style type="text/css"> .no-show { display: none; } .disable-fade-in{ opacity:
+1 !important; transform: none !important; visibility: visible !important; } </
+style>
+Skip_to_main_content
+Contact
+Contact
+Report_InformationReport Information
+[Agency_Logo]
+Search CIA.govSearch
+[query               ]
+Today&#x27;s CIA
+AboutLeadershipOrganizationMission_&_VisionPartner_with_CIATechnologyPrivacy
+Careers
+Career_OpportunitiesHiring_ProcessBenefitsAccommodationsVeteransStudent
+Programs
+Legacy
+OriginHistoryMuseumHeadquartersTrailblazersIn_Memoriam
+Newsroom
+News_&_StoriesPress_Releases_&_StatementsSpeeches_&_TranscriptsThe_Langley
+Files_Podcast
+Library
+ResourcesPublicationsPrepublication_ReviewStudy_of_IntelligenceWorld
+FactbookCIA_ReportsCIA_MapsFOIA_Reading_Room
+Contact CIAReport Information
+****** We are
+the Nation's
+first line of
+defense ******
+We accomplish what others cannot accomplish and go where others cannot go
+A career at CIA is unlike any other. We are looking for people from all
+backgrounds and walks of life to carry out the work of a Nation.
+Find_your_calling
+[Headquarters Koi Pond][Headquarters Koi Pond]
+[mission glyph][mission glyph]
+***** Our Agency *****
+We give U.S. leaders the intelligence they need to keep our country safe
+As the world
+```
+
 ## torsocks
 
 ```bash
@@ -142,4 +187,22 @@ Weather report: Amsterdam, Netherlands
 Follow @igor_chubin for wttr.in updates
 ```
 
-<span style="color:white; background-color:black;">hi</span>
+The terminal text is colored using ANSI escape sequences. We capture this using `aha` <https://github.com/theZiz/aha> and
+<https://manpages.ubuntu.com/manpages/jammy/man1/aha.1.html>
+
+```console
+ubuntu@LAPTOP-JBell:~$ torify curl -s wttr.in/Toronto | aha --black > wttr.html
+ubuntu@LAPTOP-JBell:~$ head wttr.html
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8"/>
+<title>stdin</title>
+</head>
+<body style="color:white; background-color:black">
+<pre>
+```
+
+The HTML file `wttr.html` is here: <https://jordanbell.info/assets/html/wttr.html>
