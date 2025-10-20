@@ -23,6 +23,10 @@ C
 B
 ```
 
+<https://ss64.com/bash/syntax-here.html>
+
+
+
 <https://www.grymoire.com/Unix/Quote.html#toc-uh-10>
 
 > There is another type of quote the shells support. There are called **Here is** documents. There are used when you need to read something from standard input, but you don't want to create a file to provide that input. You can use this as another way to have dynamic variables inside a shell script. There are also used to create files in a shell script. A <tt>HERE IS</tt> document can be created by the "<<" character, followed by a special word:
