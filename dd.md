@@ -86,33 +86,3 @@ ubuntu@LAPTOP-JBell:~$ wc --bytes zero.img.gz
 651302 zero.img.gz
 ```
 
-## fallocate
-
-<https://tecadmin.net/fallocate-command-in-linux/>
-
-```console
-ubuntu@LAPTOP-JBell:~$ fallocate -l 10MB sparse.img
-ubuntu@LAPTOP-JBell:~$ du -h sparse.img
-9.6M    sparse.img
-ubuntu@LAPTOP-JBell:~$ ls -lsh sparse.img
-9.6M -rw-r--r-- 1 ubuntu ubuntu 9.6M Oct 21 03:26 sparse.img
-ubuntu@LAPTOP-JBell:~$ wc --bytes sparse.img
-10000000 sparse.img
-```
-
-```console
-ubuntu@LAPTOP-JBell:~$ gzip -c sparse.img > sparse.img.gz
-ubuntu@LAPTOP-JBell:~$ du -h sparse.img.gz
-12K     sparse.img.gz
-ubuntu@LAPTOP-JBell:~$ ls -lsh sparse.img.gz
-12K -rw-r--r-- 1 ubuntu ubuntu 9.6K Oct 21 03:28 sparse.img.gz
-ubuntu@LAPTOP-JBell:~$ stat sparse.img.gz
-  File: sparse.img.gz
-  Size: 9748            Blocks: 24         IO Block: 4096   regular file
-Device: 830h/2096d      Inode: 78158       Links: 1
-Access: (0644/-rw-r--r--)  Uid: ( 1000/  ubuntu)   Gid: ( 1000/  ubuntu)
-Access: 2025-10-21 01:07:38.694189811 -0400
-Modify: 2025-10-21 03:28:48.839807683 -0400
-Change: 2025-10-21 03:28:48.839807683 -0400
- Birth: 2025-10-21 01:07:38.694189811 -0400
-```
