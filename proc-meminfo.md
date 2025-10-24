@@ -156,9 +156,3 @@ ubuntu@LAPTOP-JBell:~$ sudo dmidecode --type 17
 Scanning /dev/mem for entry point.
 # No SMBIOS nor DMI entry point found, sorry.
 ```
-
-Using Ubuntu on VMware Workstation:
-
-```console
-sudo dmidecode --type 17
-```
