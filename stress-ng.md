@@ -1,8 +1,12 @@
 # stress-ng
 
-<https://www.mankier.com/1/stress-ng>
+<https://github.com/ColinIanKing/stress-ng>
+
+> stress-ng will stress test a computer system in various selectable ways. It was designed to exercise various physical subsystems of a computer as well as the various operating system kernel interfaces.
 
 <https://wiki.ubuntu.com/Kernel/Reference/stress-ng>
+
+<https://www.mankier.com/1/stress-ng>
 
 ```console
 ubuntu@LAPTOP-JBell:~$ sudo dmesg -C
