@@ -1,4 +1,4 @@
-# dd and fold
+# Random text
 
 ```console
 ubuntu@LAPTOP-JBell:~$ dd if=/dev/random bs=1024 count=1 status=none | tr -cd 'A-Za-z0-9' | fold
