@@ -1,6 +1,4 @@
-# Memory monitoring in Linux
-
-## /proc/meminfo
+# /proc/meminfo
 
 ```console
 ubuntu@LAPTOP-JBell:~$ cat /proc/meminfo
