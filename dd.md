@@ -4,6 +4,8 @@
 
 <https://ss64.com/bash/dd.html>
 
+## conv
+
 ```console
 ubuntu@LAPTOP-JBell:~$ echo hello > hello.txt
 ubuntu@LAPTOP-JBell:~$ dd if=hello.txt status=none
@@ -11,6 +13,37 @@ hello
 ubuntu@LAPTOP-JBell:~$ dd if=hello.txt status=none conv=ucase
 HELLO
 ```
+
+## iflag
+
+<https://www.pixelbeat.org/docs/coreutils-gotchas.html>
+
+> dd iflag=fullblock is usually what you want because when reading from a fifo/pipe you often get a short read, which means you get too little data if you specify "count", or too much data if you specify "sync". For example:
+
+
+We replicate this with a Bash for loop:
+
+```console
+ubuntu@LAPTOP-JBell:~$ for i in {1..5}; do dd status=none bs=1 count=512 if=/dev/zero | dd status=none count=1 bs=512 | wc -c; done
+82
+176
+73
+122
+17
+```
+
+We also do this multiple times using GNU parallel:[^1]
+[^1]: <http://www.gnu.org/software/parallel/parallel_tutorial.html>
+
+```console
+ubuntu@LAPTOP-JBell:~$ parallel -n0 'dd status=none bs=1 count=512 if=/dev/zero | dd status=none count=1 bs=512 | wc -c' ::: {1..5}
+16
+409
+128
+390
+496
+```
+
 
 ## Sparse files
 
