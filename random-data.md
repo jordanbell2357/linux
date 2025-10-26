@@ -1,4 +1,4 @@
-# Random CSV
+# Random data generation
 
 
 ## Creating and chunking random text
@@ -30,6 +30,31 @@ UYkT0N2GFxBepBuh
 jdaLxlXPqI8lQZD8
 eOk7w2idQ8Nqi2Wo
 ```
+
+
+## xxd
+
+```bash
+ubuntu@LAPTOP-JBell:~$ dd if=/dev/urandom count=2 bs=1 status=none | xxd -p
+b5ee
+```
+
+```console
+ubuntu@LAPTOP-JBell:~$ dd if=/dev/urandom count=32 bs=1 status=none | xxd -c 8 -p
+84681e94eab32045
+ea7cd36ab119cac9
+dd97ee9cf1d9de9d
+c80c707f974211ea
+```
+
+```console
+ubuntu@LAPTOP-JBell:~$ dd if=/dev/urandom count=4 bs=8 status=none | xxd -c 8 -p
+6092412b8646a787
+1adc4eeaba510c27
+2b2b4b7715594695
+53ee902e31c35107
+```
+
 
 
 ## UUID
