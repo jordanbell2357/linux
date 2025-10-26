@@ -4,11 +4,23 @@
 ## Random text
 
 ```console
-ubuntu@LAPTOP-JBell:~$ dd if=/dev/random bs=32 count=1 status=none | tr -cd 'A-Za-z0-9'
-YsjbS7eZoIpYoI5iEPIKWtl6BkyvH2FdCLxa7xRJxupujYvZJjua1boBa8lWtGWiP7u4wax336QNqdK8
-YpISextfcBsBl7Ku3vTT3RJUWzdd4VoZPXrkW2QztwBT4E9whtMVqwSU8Th5sAK29yr2onjqrwbDy8Rs
-1O89nNe75nHuR4r7yLODgnveWeQlJfriALZP6W16v2NBe8SWNnqaB84y8cF9iAIdUnoQC1Glw2iz
+ubuntu@LAPTOP-JBell:~$ dd if=/dev/random bs=1024 count=1 status=none | tr -cd 'A-Za-z0-9' | dd bs=128 count=1 status=none conv=unblock | fold -w 16 | xargs printf "%s\n" | sed 's/.*$/&\n/g'
+QT6biXAxnmF7JXYV
+oV7jzdaJoplnajj6
+J0PTpgduLyuOWjUH
+Xlv3h4pFqsPBUuCL
+41Yts4dvszUtLO7m
+xSTtsPsRUxEGugqF
+Ks2RUpsIwy1XDP1W
+T5EvCDlX6CtHulqj
 ```
+
+
+## UUID
+
+<https://linux.die.net/man/1/uuid>
+
+
 
 
 ## /usr/share/dict/words
