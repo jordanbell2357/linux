@@ -6,6 +6,8 @@
 
 >   aha - Ansi HTML Adapter
 
+<https://stackoverflow.com/a/55711814/11683596>
+
 <https://man7.org/linux/man-pages/man1/script.1.html>
 
 <https://man7.org/linux/man-pages/man1/sar.1.html>
