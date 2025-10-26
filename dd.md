@@ -32,7 +32,7 @@ ubuntu@LAPTOP-JBell:~$ for i in {1..5}; do dd status=none bs=1 count=512 if=/dev
 17
 ```
 
-We also do this multiple times using GNU parallel:[^1]
+We also do this multiple times using GNU parallel: [^1]
 [^1]: <http://www.gnu.org/software/parallel/parallel_tutorial.html>
 
 ```console
@@ -44,6 +44,16 @@ ubuntu@LAPTOP-JBell:~$ parallel -n0 'dd status=none bs=1 count=512 if=/dev/zero 
 496
 ```
 
+On the second invocation of dd, we use `iflag=fullblock`:
+
+```console
+ubuntu@LAPTOP-JBell:~$ for i in {1..5}; do dd status=none bs=1 count=512 if=/dev/zero | dd status=none iflag=fullblock count=1 bs=512 | wc -c; done
+512
+512
+512
+512
+512
+```
 
 ## Sparse files
 
