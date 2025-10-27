@@ -1,14 +1,45 @@
-# Random data generation
+# Random data generation and formatting
 
+## dd, xxd
 
-## Creating and chunking random text
+```bash
+dd if=/dev/urandom count=1 bs=32 status=none | xxd -c 8 -p
+```
+
+```
+84681e94eab32045
+ea7cd36ab119cac9
+dd97ee9cf1d9de9d
+c80c707f974211ea
+```
+
+## dd, base64
+
+<https://ss64.com/bash/base64.html>
+
+```bash
+dd if=/dev/urandom count=1 bs=32 status=none | base64 -w 16
+```
 
 ```console
-ubuntu@LAPTOP-JBell:~$ dd if=/dev/random bs=1024 count=1 status=none |
-tr -cd 'A-Za-z0-9' |
-dd bs=128 count=1 status=none conv=unblock |
-fold -w 16 |
-sed -r '$ s/(.*)/&\n/'
+lhs4Q1hA+KxKrkxR
+/9xlvsZcmE4lWrr3
+WGPJp5tM5xg=
+```
+
+
+
+## dd, tr, fold, sed
+
+```bash
+dd if=/dev/random bs=1024 count=1 status=none |
+ tr -cd 'A-Za-z0-9' |
+ dd bs=128 count=1 status=none conv=unblock |
+ fold -w 16 |
+ sed -r '$ s/(.*)/&\n/'
+```
+
+```
 3cTFOPN8YspO7i2n
 1K7rf9MZJ2IWjMCC
 Vsu4DVxg6VDxJc1f
@@ -19,8 +50,17 @@ MNWB4XneWi3rBRa7
 MFefPyRvbqtQsPqS
 ```
 
-```console
-ubuntu@LAPTOP-JBell:~$ dd if=/dev/random bs=1024 count=1 status=none | tr -cd 'A-Za-z0-9' | dd bs=128 count=1 status=none conv=unblock | fold -w 16 | xargs printf "%s\n"
+## dd, tr, xargs, printf
+
+```bash
+dd if=/dev/random bs=1024 count=1 status=none |
+ tr -cd 'A-Za-z0-9' |
+ dd bs=128 count=1 status=none conv=unblock |
+ fold -w 16 |
+ xargs printf "%s\n"
+```
+
+```
 ohNxbQwdTbwlCWMz
 gE4JAAqV5XLcyjlP
 XWNWKbczmFmJ3QHe
@@ -31,39 +71,25 @@ jdaLxlXPqI8lQZD8
 eOk7w2idQ8Nqi2Wo
 ```
 
-
-## xxd
-
-```bash
-ubuntu@LAPTOP-JBell:~$ dd if=/dev/urandom count=2 bs=1 status=none | xxd -p
-b5ee
-```
-
-```console
-ubuntu@LAPTOP-JBell:~$ dd if=/dev/urandom count=32 bs=1 status=none | xxd -c 8 -p
-84681e94eab32045
-ea7cd36ab119cac9
-dd97ee9cf1d9de9d
-c80c707f974211ea
-```
-
-```console
-ubuntu@LAPTOP-JBell:~$ dd if=/dev/urandom count=4 bs=8 status=none | xxd -c 8 -p
-6092412b8646a787
-1adc4eeaba510c27
-2b2b4b7715594695
-53ee902e31c35107
-```
-
-
-
-## UUID
-
-<https://linux.die.net/man/1/uuid>
-
-
-
-
 ## /usr/share/dict/words
 
 <https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch04s11.html#usrsharedictWordLists>
+
+```bash
+shuf -n 10 /usr/share/dict/words
+```
+
+```
+loopier
+daffy
+flout
+Peruvian's
+Reid's
+readjust
+clicks
+added
+autoworkers
+skateboard's
+```
+
+
