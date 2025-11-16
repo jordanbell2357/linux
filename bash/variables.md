@@ -1,7 +1,5 @@
 # Bash variables
 
-<https://wiki.ghpc.au.dk/bash.html>
-
 ```bash
 #!/usr/bin/env bash
 # hello.sh
