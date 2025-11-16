@@ -21,48 +21,46 @@ Hello World
 # variables.sh
 
 global_variable() {
-        MINUTES=$(($1+$2));
-        echo ${FUNCNAME[0]} MINUTES=$MINUTES;
+        NUMBER=$(($1+$2));
+        echo ${FUNCNAME[0]} NUMBER=$NUMBER;
 }
 
 local_variable() {
-        local MINUTES=$(($1+$2));
-        echo ${FUNCNAME[0]} MINUTES=$MINUTES;
+        local NUMBER=$(($1+$2));
+        echo ${FUNCNAME[0]} NUMBER=$NUMBER;
 }
 
-add_minutes() {
-        local MINUTES=$(($1+$2));
-        echo ${FUNCNAME[0]} $(date -d "$MINUTES minutes")
-}
-
-MINUTES=$1
+NUMBER=$1
 RANDOM_NOISE=$(shuf -i 10-15 -n 1)
 
-echo $0 MINUTES=$MINUTES
-echo $0 RANDOM_NOISE=$RANDOM_NOISE
-global_variable $MINUTES $RANDOM_NOISE
-echo $0 MINUTES=$MINUTES
-echo $0 RANDOM_NOISE=$RANDOM_NOISE
-local_variable $MINUTES $RANDOM_NOISE
-echo $0 MINUTES=$MINUTES
-echo $0 RANDOM_NOISE=$RANDOM_NOISE
-add_minutes $MINUTES $RANDOM_NOISE
-echo $0 MINUTES=$MINUTES
-echo $0 RANDOM_NOISE=$RANDOM_NOISE
+echo NUMBER=$NUMBER
+echo RANDOM_NOISE=$RANDOM_NOISE
+global_variable $NUMBER $RANDOM_NOISE
+echo NUMBER=$NUMBER
+local_variable $NUMBER $RANDOM_NOISE
+echo NUMBER=$NUMBER
 ```
 
 ```console
 ubuntu@LAPTOP-JBell:~$ ./variables.sh 60
-./variables.sh MINUTES=60
-./variables.sh RANDOM_NOISE=15
-global_variable MINUTES=75
-./variables.sh MINUTES=75
-./variables.sh RANDOM_NOISE=15
-local_variable MINUTES=90
-./variables.sh MINUTES=75
-./variables.sh RANDOM_NOISE=15
-add_minutes Sat Nov 15 21:01:27 EST 2025
-./variables.sh MINUTES=75
-./variables.sh RANDOM_NOISE=15
+NUMBER=60
+RANDOM_NOISE=11
+global_variable NUMBER=71
+NUMBER=71
+local_variable NUMBER=82
+NUMBER=71
 ```
+
+
+> A variable can also be set for a single program in the current scope/shell using the one-line syntax:
+>
+> `VARIABLE1="value1" VARIABLE2="value2" run_program`
+
+```console
+ubuntu@LAPTOP-JBell:~$ date
+Sat Nov 15 20:15:16 EST 2025
+ubuntu@LAPTOP-JBell:~$ TZ=UTC date
+Sun Nov 16 01:15:12 UTC 2025
+```
+
 
