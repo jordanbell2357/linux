@@ -29,13 +29,13 @@ local_variable() {
 }
 
 NUMBER=$1
-RANDOM_NOISE=$(shuf -i 10-15 -n 1)
+ADJUST=1
 
 echo NUMBER=$NUMBER
-echo RANDOM_NOISE=$RANDOM_NOISE
-global_variable $NUMBER $RANDOM_NOISE
+echo ADJUST=$RANDOM_NOISE
+global_variable $NUMBER $ADJUST
 echo NUMBER=$NUMBER
-local_variable $NUMBER $RANDOM_NOISE
+local_variable $NUMBER $ADJUST
 echo NUMBER=$NUMBER
 ```
 
