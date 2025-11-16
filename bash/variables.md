@@ -32,21 +32,11 @@ NUMBER=$1
 ADJUST=1
 
 echo NUMBER=$NUMBER
-echo ADJUST=$RANDOM_NOISE
+echo ADJUST=$ADJUST
 global_variable $NUMBER $ADJUST
 echo NUMBER=$NUMBER
 local_variable $NUMBER $ADJUST
 echo NUMBER=$NUMBER
-```
-
-```console
-ubuntu@LAPTOP-JBell:~$ ./variables.sh 60
-NUMBER=60
-RANDOM_NOISE=11
-global_variable NUMBER=71
-NUMBER=71
-local_variable NUMBER=82
-NUMBER=71
 ```
 
 
