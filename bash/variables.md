@@ -49,6 +49,8 @@ ubuntu@LAPTOP-JBell:~$ date
 Sat Nov 15 20:15:16 EST 2025
 ubuntu@LAPTOP-JBell:~$ TZ=UTC date
 Sun Nov 16 01:15:12 UTC 2025
+ubuntu@LAPTOP-JBell:~$ date
+Sat Nov 15 20:15:16 EST 2025
 ```
 
 
