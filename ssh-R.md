@@ -28,7 +28,9 @@ On local machine,
 ssh -R 3001:localhost:3002 ubuntu@histfile.org
 ```
 
-This logs us into the remote machine. While this session is active, we run tcpdump and then curl
+This logs us into the remote machine. While this session is active, we run tcpdump [^tcpdump] and then curl
+
+[^tcpdump]: <https://danielmiessler.com/blog/tcpdump>
 
 ```bash
 sudo tcpdump -w port3002.pcap port 3002
