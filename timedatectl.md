@@ -51,3 +51,23 @@ Time since last adjustment is 5 seconds
 Calculated Hardware Clock drift is 0.000000 seconds
 2025-12-04 01:07:33.472763+00:00
 ```
+
+<https://www.baeldung.com/linux/bash-list-dates-interval>
+
+
+
+## Timezones
+
+```console
+ubuntu@LAPTOP-JBell:~$ timedatectl list-timezones | grep America | shuf -n 10
+America/Matamoros
+America/St_Thomas
+America/Thunder_Bay
+America/Atka
+America/Grenada
+America/Noronha
+America/Kralendijk
+America/Merida
+America/Boise
+America/Guyana
+```
