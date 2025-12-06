@@ -92,7 +92,7 @@ autoworkers
 skateboard's
 ```
 
-## Timezones
+## timedatectl
 
 ```console
 ubuntu@LAPTOP-JBell:~$ timedatectl list-timezones | grep America | shuf -n 10
@@ -107,3 +107,4 @@ America/Merida
 America/Boise
 America/Guyana
 ```
+
