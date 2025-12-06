@@ -4,6 +4,13 @@
 
 <https://ss64.com/bash/dd.html>
 
+## oom
+
+```console
+ubuntu@histfile:~$ dd if=/dev/zero bs=1G count=10 | tail > /dev/null
+Killed
+```
+
 ## conv
 
 ```console
