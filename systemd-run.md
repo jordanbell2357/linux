@@ -46,9 +46,13 @@ Password:
 ==== AUTHENTICATION COMPLETE ====
 Running as unit: run-u113.service; invocation ID: 1eda47c044614a549533b3bf8f8b5ac6
 Press ^] three times within 1s to disconnect TTY.
-ubuntu@histfile:~$ sud osystemctl status run-u113.service
-Command 'sud' not found, but there are 15 similar ones.
-ubuntu@histfile:~$ sudo systemctl status run-u113.service
+```
+
+```bash
+sudo systemctl status run-u113.service
+```
+
+```console
 × run-u113.service - /usr/bin/bash -c "dd if=/dev/zero bs=100M count=100 | tail > /dev/null"
      Loaded: loaded (/run/systemd/transient/run-u113.service; transient)
   Transient: yes
