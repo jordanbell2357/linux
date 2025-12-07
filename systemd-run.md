@@ -15,55 +15,27 @@ Authentication is required to manage system services or other units.
 Authenticating as: Ubuntu (ubuntu)
 Password:
 ==== AUTHENTICATION COMPLETE ====
-Running as unit: run-u107.service
-Press ^] three times within 1s to disconnect TTY.
-ubuntu@histfile:~$ sudo systemctl status run-u107.service
-× run-u107.service - /usr/bin/bash -c "dd if=/dev/zero bs=100M count=100 | tail > /dev/null"
-     Loaded: loaded (/run/systemd/transient/run-u107.service; transient)
-  Transient: yes
-     Active: failed (Result: oom-kill) since Sat 2025-12-06 20:07:00 UTC; 20s ago
-   Duration: 693ms
-    Process: 11522 ExecStart=/usr/bin/bash -c dd if=/dev/zero bs=100M count=100 | tail > /dev/null (code=killed, signal>
-   Main PID: 11522 (code=killed, signal=TERM)
-        CPU: 1.053s
-
-Dec 06 20:06:59 histfile systemd[1]: Started run-u107.service - /usr/bin/bash -c "dd if=/dev/zero bs=100M count=100 | t>
-Dec 06 20:07:00 histfile systemd[1]: run-u107.service: A process of this unit has been killed by the OOM killer.
-Dec 06 20:07:00 histfile systemd[1]: run-u107.service: Failed with result 'oom-kill'.
-Dec 06 20:07:00 histfile systemd[1]: run-u107.service: Consumed 1.053s CPU time, 500.0M memory peak, 0B memory swap pea>
-```
-
-
-```bash
-systemd-run -p MemoryMax=2G -t bash -c "dd if=/dev/zero bs=100M count=100 | tail > /dev/null"
-```
-
-```console
-==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ====
-Authentication is required to manage system services or other units.
-Authenticating as: Ubuntu (ubuntu)
-Password:
-==== AUTHENTICATION COMPLETE ====
-Running as unit: run-u113.service; invocation ID: 1eda47c044614a549533b3bf8f8b5ac6
+Running as unit: run-u33.service; invocation ID: e4142a5a924140aab7544068d1f80a74
 Press ^] three times within 1s to disconnect TTY.
 ```
 
 ```bash
-sudo systemctl status run-u113.service
+sudo systemctl status --no-pager -l 
 ```
 
 ```console
-× run-u113.service - /usr/bin/bash -c "dd if=/dev/zero bs=100M count=100 | tail > /dev/null"
-     Loaded: loaded (/run/systemd/transient/run-u113.service; transient)
+× run-u36.service - /usr/bin/bash -c "dd if=/dev/zero bs=100M count=100 | tail > /dev/null"
+     Loaded: loaded (/run/systemd/transient/run-u36.service; transient)
   Transient: yes
-     Active: failed (Result: oom-kill) since Sat 2025-12-06 20:11:06 UTC; 16s ago
-   Duration: 3.342s
-    Process: 11597 ExecStart=/usr/bin/bash -c dd if=/dev/zero bs=100M count=100 | tail > /dev/null (code=killed, signal>
-   Main PID: 11597 (code=killed, signal=TERM)
-        CPU: 5.113s
+     Active: failed (Result: oom-kill) since Sun 2025-12-07 05:45:05 UTC; 18s ago
+   Duration: 710ms
+    Process: 2201 ExecStart=/usr/bin/bash -c dd if=/dev/zero bs=100M count=100 | tail > /dev/null (code=killed, signal=TERM)
+   Main PID: 2201 (code=killed, signal=TERM)
+        CPU: 1.023s
 
-Dec 06 20:11:02 histfile systemd[1]: Started run-u113.service - /usr/bin/bash -c "dd if=/dev/zero bs=100M count=100 | t>
-Dec 06 20:11:05 histfile systemd[1]: run-u113.service: A process of this unit has been killed by the OOM killer.
-Dec 06 20:11:06 histfile systemd[1]: run-u113.service: Failed with result 'oom-kill'.
-Dec 06 20:11:06 histfile systemd[1]: run-u113.service: Consumed 5.113s CPU time, 2.0G memory peak, 0B memory swap peak.
+Dec 07 05:45:04 histfile systemd[1]: Started run-u36.service - /usr/bin/bash -c "dd if=/dev/zero bs=100M count=100 | tail > /dev/null".
+Dec 07 05:45:05 histfile systemd[1]: run-u36.service: A process of this unit has been killed by the OOM killer.
+Dec 07 05:45:05 histfile systemd[1]: run-u36.service: Failed with result 'oom-kill'.
+Dec 07 05:45:05 histfile systemd[1]: run-u36.service: Consumed 1.023s CPU time, 500.0M memory peak, 0B memory swap peak.
 ```
+
