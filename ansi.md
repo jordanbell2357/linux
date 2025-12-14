@@ -5,18 +5,8 @@ echo -e "\033[31mred\e[0m."
 ```
 
 ```bash
-echo -e "\033[31mred\e[0m." | aha -b
+echo -e "\e[3m\e[1mbold italic\e[0m."
 ```
 
 
-<div style="color:white; background-color:black">
-<pre>
-<span style="color:red;">red</span>.
-hi
-</pre>
-</div>
-
-<pre>
-<span style="color:red;">red</span>.
-hi
-</pre>
+<font color="red">This text is red!</font>
