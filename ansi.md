@@ -8,5 +8,3 @@ echo -e "\033[31mred\e[0m."
 echo -e "\e[3m\e[1mbold italic\e[0m."
 ```
 
-
-<font color="red">This text is red!</font>
