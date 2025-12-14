@@ -15,3 +15,8 @@ echo -e "\033[31mred\e[0m." | aha -b
 hi
 </pre>
 </div>
+
+<pre>
+<span style="color:red;">red</span>.
+hi
+</pre>
