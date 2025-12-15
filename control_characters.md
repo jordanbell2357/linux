@@ -1,6 +1,27 @@
 # Control characters
 
+<p>ANSI X3.4-1977. <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub1-2-1977.pdf">American National Standard Code for Information Interchange</a></p>
+
+<blockquote>
+<strong>Control Character.</strong> A character whose occurrence in a
+particular context initiates, modifies, or stops an action that affects the recording, processing, transmission, or interpretation of data. (p. 10)
+</blockquote>
+
+<blockquote>
+<strong>1/11 ESC (Escape).</strong> A control character intended to
+provide supplementary characters (code extension).
+The Escape character itself is a prefix affecting the
+interpretation of a limited number of contiguous bit
+patterns. The effect of this character is described in
+American National Standard X3.41-1974. (p. 11)
+</blockquote>
+
 <a href="https://ecma-international.org/publications-and-standards/standards/ecma-48/">ECMA-48</a>
+
+<a href="https://vt100.net/docs/vt100-ug/chapter3.html#T3-5">VT100 User Guide, S3.3.6</a>
+
+> CTRL (Control) – The CTRL key is used in conjunction with other keys on the keyboard to generate control codes. If the CTRL key is held down when any of the keys in Table 3-5 are typed,
+  the code actually transmitted is in the range 0008-0378. 
 
 <table>
 <caption>Table 3-5 Control Codes Generated</caption>  
