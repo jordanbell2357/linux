@@ -6,10 +6,6 @@ https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=[:Block=Control_Pictu
 
 https://kbd-project.org/manpages/man1/showkey.1.html
 
-http://www.linux-usb.org/
-
-https://usb.org/sites/default/files/hut1_6.pdf
-
 <kbd>Enter</kbd>, <kbd>Esc</kbd>, <kbd>Tab</kbd>, <kbd>Space</kbd>, <kbd>Backspace</kbd>
 
 ␈
