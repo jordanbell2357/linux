@@ -12,6 +12,6 @@ https://www.gnu.org/software/coreutils/manual/html_node/stty-invocation.html
 > 
 > Enter the next character typed literally, even if it is a special character. Non-POSIX.
 
-start = <kb>^Q</kb> = CTRL+Q
+start = <kbd>^Q</kbd> = CTRL+Q
 
-lnext = <kb>^V</kb> = CTRL+V
+lnext = <kbd>^V</kbd> = CTRL+V
