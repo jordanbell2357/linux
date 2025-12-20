@@ -2,7 +2,7 @@
 
 https://www.gnu.org/software/coreutils/manual/html_node/stty-invocation.html
 
-## 19.2.6 Special characters
+<img width="676" height="359" alt="image" src="https://github.com/user-attachments/assets/a117b523-c46d-40f7-84af-1b4f582a61d8" />
 
 > **‘start’**
 > 
@@ -12,3 +12,6 @@ https://www.gnu.org/software/coreutils/manual/html_node/stty-invocation.html
 > 
 > Enter the next character typed literally, even if it is a special character. Non-POSIX.
 
+start = <key>^Q</key> = CTRL+Q
+
+lnext = <key>^V</key> = CTRL+V
