@@ -1,4 +1,4 @@
-# CTRL key
+# Control codes
 
 <a href="https://vt100.net/docs/vt100-ug/chapter3.html#T3-5">VT100 User Guide, S3.3.6</a>
 
