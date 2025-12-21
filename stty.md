@@ -21,3 +21,13 @@ https://www.gnu.org/software/coreutils/manual/html_node/stty-invocation.html
 start = <kbd>^Q</kbd> = CTRL+Q
 
 lnext = <kbd>^V</kbd> = CTRL+V
+
+http://xahlee.info/linux/linux_virtual_console.html
+
+> **What is the use of Virtual Terminal? Why not just the terminal?**
+>
+> Virtual Terminal is useful in situations when you need to bypass the GUI (X11) system.
+>
+> For example, when X11 crashed or frozen.
+>
+> For example, for getting scancode of a key press, showkey --scancodes works only when in virtual terminal.
