@@ -2,21 +2,21 @@
 
 https://linux.die.net/man/1/xev
 
-<kbd>Esc</kbd>
+<kbd>Backspace</kbd>
 
 ```console
-KeyPress event, serial 32, synthetic NO, window 0x600001,
-    root 0x438, subw 0x0, time 358433, (1252,-151), root:(1380,333),
-    state 0x0, keycode 9 (keysym 0xff1b, Escape), same_screen YES,
-    XLookupString gives 1 bytes: (1b) "
-mbLookupString gives 1 bytes: (1b) "
-FilterEvent returns: False
+KeyPress event, serial 35, synthetic NO, window 0x600001,
+    root 0x438, subw 0x0, time 370141, (1252,-151), root:(1380,333),
+    state 0x0, keycode 22 (keysym 0xff08, BackSpace), same_screen YES,
+    XLookupString gives 1 bytes: (08) "
+    XmbLookupString gives 1 bytes: (08) "
+    XFilterEvent returns: False
 
 KeyRelease event, serial 35, synthetic NO, window 0x600001,
-    root 0x438, subw 0x0, time 358538, (1252,-151), root:(1380,333),
-    state 0x0, keycode 9 (keysym 0xff1b, Escape), same_screen YES,
-    XLookupString gives 1 bytes: (1b) "
-FilterEvent returns: False
+    root 0x438, subw 0x0, time 370267, (1252,-151), root:(1380,333),
+    state 0x0, keycode 22 (keysym 0xff08, BackSpace), same_screen YES,
+    XLookupString gives 1 bytes: (08) "
+    XFilterEvent returns: False
 ```
 
 <kbd>Tab</kbd>
@@ -53,6 +53,23 @@ KeyRelease event, serial 35, synthetic NO, window 0x600001,
     XFilterEvent returns: False
 ```
 
+<kbd>Esc</kbd>
+
+```console
+KeyPress event, serial 32, synthetic NO, window 0x600001,
+    root 0x438, subw 0x0, time 358433, (1252,-151), root:(1380,333),
+    state 0x0, keycode 9 (keysym 0xff1b, Escape), same_screen YES,
+    XLookupString gives 1 bytes: (1b) "
+mbLookupString gives 1 bytes: (1b) "
+FilterEvent returns: False
+
+KeyRelease event, serial 35, synthetic NO, window 0x600001,
+    root 0x438, subw 0x0, time 358538, (1252,-151), root:(1380,333),
+    state 0x0, keycode 9 (keysym 0xff1b, Escape), same_screen YES,
+    XLookupString gives 1 bytes: (1b) "
+FilterEvent returns: False
+```
+
 <kbd>Space</kbd>
 
 ```console
@@ -70,23 +87,6 @@ KeyRelease event, serial 35, synthetic NO, window 0x600001,
     XFilterEvent returns: False
 ```
 
-<kbd>Backspace</kbd>
-
-```console
-KeyPress event, serial 35, synthetic NO, window 0x600001,
-    root 0x438, subw 0x0, time 370141, (1252,-151), root:(1380,333),
-    state 0x0, keycode 22 (keysym 0xff08, BackSpace), same_screen YES,
-    XLookupString gives 1 bytes: (08) "
-    XmbLookupString gives 1 bytes: (08) "
-    XFilterEvent returns: False
-
-KeyRelease event, serial 35, synthetic NO, window 0x600001,
-    root 0x438, subw 0x0, time 370267, (1252,-151), root:(1380,333),
-    state 0x0, keycode 22 (keysym 0xff08, BackSpace), same_screen YES,
-    XLookupString gives 1 bytes: (08) "
-    XFilterEvent returns: False
-```
-
 <kbd>Delete</kbd>
 
 ```console
@@ -101,5 +101,22 @@ KeyRelease event, serial 35, synthetic NO, window 0x600001,
     root 0x438, subw 0x0, time 370777, (1252,-151), root:(1380,333),
     state 0x0, keycode 119 (keysym 0xffff, Delete), same_screen YES,
     XLookupString gives 1 bytes: (7f) ""
+    XFilterEvent returns: False
+```
+
+<kbd>Ctrl</kbd>
+
+```console
+KeyPress event, serial 32, synthetic NO, window 0x600001,
+    root 0x438, subw 0x0, time 10041970, (837,672), root:(1566,744),
+    state 0x0, keycode 37 (keysym 0xffe3, Control_L), same_screen YES,
+    XLookupString gives 0 bytes:
+    XmbLookupString gives 0 bytes:
+    XFilterEvent returns: False
+
+KeyRelease event, serial 35, synthetic NO, window 0x600001,
+    root 0x438, subw 0x0, time 10042095, (837,672), root:(1566,744),
+    state 0x4, keycode 37 (keysym 0xffe3, Control_L), same_screen YES,
+    XLookupString gives 0 bytes:
     XFilterEvent returns: False
 ```
