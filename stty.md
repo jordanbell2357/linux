@@ -10,6 +10,10 @@ https://www.gnu.org/software/coreutils/manual/html_node/stty-invocation.html
 
 <img width="671" height="194" alt="image" src="https://github.com/user-attachments/assets/ade66ff8-efcc-4a4e-9f01-2c047592e8fc" />
 
+<img width="679" height="403" alt="image" src="https://github.com/user-attachments/assets/55097b41-a47e-4e3f-a67c-856fa299c722" />
+
+
+
 > **‘start’**
 > 
 > Restart the output after stopping it.
