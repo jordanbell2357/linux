@@ -31,3 +31,7 @@ http://xahlee.info/linux/linux_virtual_console.html
 > For example, when X11 crashed or frozen.
 >
 > For example, for getting scancode of a key press, showkey --scancodes works only when in virtual terminal.
+
+<kdb>Enter</kbd>, <kbd>Ctrl</kbd>, <kbd>Esc</kbd>
+
+<img width="667" height="162" alt="image" src="https://github.com/user-attachments/assets/49de701f-744c-4f37-b4cf-3bcb7f07026f" />
