@@ -1,5 +1,7 @@
 # stty
 
+https://tldp.org/HOWTO/html_single/Text-Terminal-HOWTO/
+
 https://www.gnu.org/software/coreutils/manual/html_node/stty-invocation.html
 
 <img width="712" height="322" alt="image" src="https://github.com/user-attachments/assets/5ab1759d-c558-4496-8c7f-da7645678db9" />
