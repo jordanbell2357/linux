@@ -4,6 +4,8 @@ https://linuxcommand.org/lc3_adv_tput.php
 
 https://ss64.com/bash/tput.html
 
+> Set terminal-dependent capabilities, colour, position.
+
 ```
    capname
            Indicates the capability from the terminfo database.
@@ -25,6 +27,20 @@ https://ss64.com/bash/tput.html
              tput lines   Display the number of lines
 ```
 
-```console
 
-```
+<div style="color:white; background-color:black">
+<pre>
+<span style="text-decoration:underline;">This text is underlined (smul). </span>
+</pre>
+</div>
+
+<div style="color:white; background-color:black">
+<pre>
+</pre>
+</div>
+
+<div style="color:white; background-color:black">
+<pre>
+This text is white.
+</pre>
+</div>
