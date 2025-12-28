@@ -9,7 +9,7 @@ https://linuxcommand.org/lc3_adv_tput.php
   </tr></thead>
 <tbody>
   <tr>
-    <td><bold</td>
+    <td>bold</td>
     <td>Start bold text</td>
   </tr>
   <tr>
