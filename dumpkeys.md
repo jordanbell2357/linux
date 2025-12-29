@@ -1,4 +1,4 @@
-# kbd-project
+# dumpkeys
 
 https://kbd-project.org/manpages/index.html
 
