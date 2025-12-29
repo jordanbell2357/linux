@@ -1,4 +1,4 @@
-# uconv NFC and NFD
+# uconv
 
 https://scripts.sil.org/nfc_vs_nfd.html
 
@@ -160,26 +160,3 @@ ubuntu@LAPTOP-JBell:~$ printf "\u0004\u0065\u0301" | uconv -f utf8 -t utf8 -x '[
 ubuntu@LAPTOP-JBell:~$ printf "\u0004\u0065\u0301" | uconv -f utf8 -t utf8 -x '::nfc; [:Cc:] >;' | xxd
 00000000: c3a9
 ```
-
-## iconv
-
-https://man7.org/linux/man-pages/man1/iconv.1.html
-
-```console
-ubuntu@LAPTOP-JBell:~$ printf "\u0004\u0065\u0301" | uconv -f utf8 -t utf8 -x '::nfc; [:Cc:] >;' | iconv -f UTF-8 -t ISO8859-1
-�
-```
-
-```console
-ubuntu@LAPTOP-JBell:~$ printf "\u0004\u0065\u0301" | uconv -f utf8 -t utf8 -x '::nfc; [:Cc:] >;' | iconv -f UTF-8 -t ISO8859-1 | xxd
-00000000: e9
-```
-
-```console
-ubuntu@LAPTOP-JBell:~$ printf "\xe9" | iconv -f ISO8859-1 -t UTF-8
-é
-ubuntu@LAPTOP-JBell:~$ printf "\xe9" | iconv -f ISO8859-1 -t UTF-8 | xxd
-00000000: c3a9                                     ..
-```
-
-
