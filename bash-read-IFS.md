@@ -8,6 +8,8 @@ https://www.gnu.org/software/bash/manual/bash.html#Bash-Builtins
 
 https://www.baeldung.com/linux/read-command
 
+https://www.spsanderson.com/steveondata/posts/2025-03-21/
+
 https://ss64.com/bash/read.html
 
 > One line is read from the standard input, and the first word is assigned to the first `name`, the second word to the second `name`, and so on,
