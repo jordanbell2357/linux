@@ -27,5 +27,13 @@ https://tldp.org/HOWTO/html_single/Text-Terminal-HOWTO/Text-Terminal-HOWTO.html#
 > It's simpler to use setterm or tput if you are typing on the command line.
 > Since "echo ..." will execute faster (since it doesn't do any lookups) it's good for using in shell scripts which run at start-up, etc.
 
+```bash
+echo $(setterm --reverse on; printf "reversed text"; setterm --reverse off); echo "normal text"
+```
+
 
 https://man7.org/linux/man-pages/man1/setterm.1.html
+
+```bash
+echo $(setterm --foreground magenta; printf "magenta text"; setterm --foreground default); echo "normal text"
+```
