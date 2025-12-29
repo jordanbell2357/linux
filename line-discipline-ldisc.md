@@ -1,4 +1,4 @@
-# Line discipline
+# Line discipline (LDISC)
 
 https://lambdalambda.ninja/blog/56/
 
