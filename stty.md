@@ -39,3 +39,7 @@ http://xahlee.info/linux/linux_virtual_console.html
 <kbd>Enter</kbd>, <kbd>Ctrl</kbd>, <kbd>Esc</kbd>
 
 <img width="667" height="162" alt="image" src="https://github.com/user-attachments/assets/49de701f-744c-4f37-b4cf-3bcb7f07026f" />
+
+https://tldp.org/HOWTO/html_single/Text-Terminal-HOWTO/Text-Terminal-HOWTO.html#toc15.4
+
+> `stty` does much of the configuration of the serial port but since application programs (and the `getty` program) often handle this, you may not need to use it much. It's handy if you're having problems or want to see how the port is set up. It also configures the terminal interface which is not only used by the serial port but is also used anytime you use a command-line interface in Linux. Try typing ``stty -a'' at your terminal/console to see how it's now set. Also try typing it without the -a (all) for a short listing which shows how it's set different than "normal" which is how it's set using the command "stty sane". Don't try to learn all the settings unless you want to become a serial historian since many of the settings are only for slow antique dumb terminals of the 1970's. Most of the defaults should work OK.
