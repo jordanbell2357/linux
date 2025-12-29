@@ -27,8 +27,8 @@ https://scripts.sil.org/nfc_vs_nfd.html
 > Answer: A colleague suggests the following:
 >
 > - programmers:
-> -- output data that may become input to unknown processes in NFC.
-> -- don't assume any normalization on input unless you control the data source.
+> - - output data that may become input to unknown processes in NFC.
+> - - don't assume any normalization on input unless you control the data source.
 
 ## NFC
 
