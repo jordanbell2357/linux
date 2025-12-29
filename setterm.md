@@ -35,5 +35,9 @@ echo $(setterm --reverse on; printf "reversed text"; setterm --reverse off); ech
 https://man7.org/linux/man-pages/man1/setterm.1.html
 
 ```bash
+echo $(setterm --underline on; printf "underlined text"; setterm --underline off); echo "normal text"
+```
+
+```bash
 echo $(setterm --foreground magenta; printf "magenta text"; setterm --foreground default); echo "normal text"
 ```
