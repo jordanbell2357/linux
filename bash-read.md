@@ -1,4 +1,4 @@
-# Bash read and IFS
+# Bash read
 
 ## read
 
