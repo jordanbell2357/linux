@@ -1,5 +1,7 @@
 # tput and tset
 
+## tput
+
 https://linuxcommand.org/lc3_adv_tput.php
 
 https://ss64.com/bash/tput.html
@@ -137,6 +139,8 @@ tput setaf 5; printf "This text has magenta foreround."; tput sgr0; echo
 ```bash
 tput setab 5; printf "This text has magenta background."; tput sgr0; echo
 ```
+
+## tset
 
 https://man7.org/linux/man-pages/man1/tset.1.html
 
