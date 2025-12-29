@@ -2,6 +2,8 @@
 
 https://kbd-project.org/manpages/index.html
 
+http://wiki.osdev.org/PS/2_Keyboard#Scan_Code_Sets
+
 
 <img width="674" height="338" alt="image" src="https://github.com/user-attachments/assets/d1fb4d3c-cd0d-442f-a2c4-afcf6c055e49" />
 
