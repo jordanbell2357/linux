@@ -2,6 +2,8 @@
 
 https://man7.org/linux/man-pages/man1/iconv.1.html
 
+https://man7.org/linux/man-pages/man7/iso_8859-1.7.html
+
 ```console
 ubuntu@LAPTOP-JBell:~$ printf "\xa3\n"
 �
