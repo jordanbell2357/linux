@@ -1,4 +1,4 @@
-# Here Documents
+# Bash Here Documents
 
 Brian W. Kernighan and Rob Pike, The Unix Programming Environment, Prentice-Hall, 1984. Section 3.7, p. 94:
 
