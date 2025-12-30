@@ -1,12 +1,20 @@
-# Line discipline (LDISC)
+# Line discipline
+
+https://docs.kernel.org/driver-api/tty/tty_ldisc.html
+
+> TTY line discipline process all incoming and outgoing character from/to a tty device. The default line discipline is N_TTY. It is also a fallback if establishing any other discipline for a tty fails. If even N_TTY fails, N_NULL takes over. That never fails, but also does not process any characters -- it throws them away.
+
+https://docs.kernel.org/driver-api/tty/n_tty.html
+
+> The default (and fallback) TTY line discipline. It tries to handle characters as per POSIX.
 
 https://lambdalambda.ninja/blog/56/
 
 > While tty devices are mostly a "dumb" device, acting as a bidirectional channel between keyboard/console (master) and process (slave), there are a number of useful special semantics that have evolved over the years that suit the asymmetric, interactive terminal interface. Some well-known examples include:
 >
 > - Typed characters (input) show up on the console (output) by default even without any process printing this out. This is called *echoing*.
-> - Backspacing in the input allows you to perform basic line editing. This type of line-based editing is called *cooked mode* or *canonical mode*. (We call it *raw mode* when cooked mode is disabled.)
-> - Pressing the special interrupt control character, usually <kbd>Ctrl</kbd>+<kbd>C</kbd> (alternatively notated <kbd>^C</kbd>), sends a signal to the slave process.
+>   - Backspacing in the input allows you to perform basic line editing. This type of line-based editing is called *cooked mode* or *canonical mode*. (We call it *raw mode* when cooked mode is disabled.)
+>   - Pressing the special interrupt control character, usually <kbd>Ctrl</kbd>+<kbd>C</kbd> (alternatively notated <kbd>^C</kbd>), sends a signal to the slave process.
 > 
 > Overall, this behavior is called the *line discipline*, and it describes the behavior ("policy") of the terminal device. Recall from the earlier blog post that the other major component of the tty/terminal subsystem is the terminal driver, which provides an interface to the input and output serial hardware devices ("mechanism"). All operations on a terminal device go through the line discipline interface.
 
