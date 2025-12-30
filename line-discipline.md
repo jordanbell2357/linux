@@ -35,7 +35,7 @@ https://www.linusakesson.net/programming/tty/
 > The default discipline, which provides line editing, is called N_TTY (drivers/char/n_tty.c, if you're feeling adventurous).
 > Other disciplines are used for other purposes, such as managing packet switched data (ppp, IrDA, serial mice), but that is outside the scope of this article.
 >
-> Session management. The user probably wants to run several programs simultaneously, and interact with them one at a time. If a program goes into an endless loop, the user may want
+> **Session management.** The user probably wants to run several programs simultaneously, and interact with them one at a time. If a program goes into an endless loop, the user may want
 > to kill it or suspend it. Programs that are started in the background should be able to execute until they try to write to the terminal, at which point they should be suspended.
 > Likewise, user input should be directed to the foreground program only. The operating system implements these features in the TTY driver (drivers/char/tty_io.c).
 >
