@@ -8,6 +8,17 @@ https://docs.kernel.org/driver-api/tty/n_tty.html
 
 > The default (and fallback) TTY line discipline. It tries to handle characters as per POSIX.
 
+https://lambdalambda.ninja/blog/54/
+
+> In the above diagrams for the vt and pty stacks, we envision the terminal layer as a driver. A driver's purpose is to abstract away hardware to a uniform software interface, so this would be appropriate if a terminal were simply a bidirectional serial channel with no extra semantics associated with it. This is how we've described a terminal so far.
+>
+> However, we've been omitting the fact that the terminal does have special semantics associated with it. This functionality gives the terminal a behavior we're all used to today, such as echoing, line editing (canonical mode), and signal handling (e.g., <kbd>Ctrl+C</kbd> sends SIGTERM). Collectively, we call these *line discipline*, or *ldisc* for short.
+>
+> Thus, we now envision the terminal layer as two separate entities: the terminal driver (e.g., vt or pty), which provide a uniform interface with master-side serial hardware input and output devices; and
+> the *tty core* layer or *line discipline*, which provides a uniform interface for software readers and writers of the terminal. This provides a clear separation of mechanism and policy.
+> The terminal driver provides a uniform interface to forward data from a serial input device to the line discipline, and write output to an output device
+> (whether this be rendering to a text console or writing to a serial device). The line discipline interfaces between the terminal driver and the software slave.
+
 https://lambdalambda.ninja/blog/56/
 
 > While tty devices are mostly a "dumb" device, acting as a bidirectional channel between keyboard/console (master) and process (slave), there are a number of useful special semantics that have evolved over the years that suit the asymmetric, interactive terminal interface. Some well-known examples include:
