@@ -101,7 +101,7 @@ colortest-256 | aha -b -t colortest-256 > colortest-256.html
 
 <https://jordanbell.info/assets/html/colortest-256.html>
 
-### wkhtmltopdf
+## aha + wkhtmltopdf
 
 https://wkhtmltopdf.org/
 
