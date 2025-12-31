@@ -116,32 +116,114 @@ https://manpages.ubuntu.com/manpages/noble/man1/wkhtmltoimage.1.html
 wkhtmltoimage colortest-8.html colortest-8.svg
 ```
 
-https://jordanbell.info/assets/images/colortest-8.svg
+<https://jordanbell.info/assets/images/colortest-8.svg>
 
 
 ```bash
 wkhtmltoimage colortest-16.html colortest-16.svg
 ```
 
-https://jordanbell.info/assets/images/colortest-16.svg
+<https://jordanbell.info/assets/images/colortest-16.svg>
 
 
 ```bash
 wkhtmltoimage colortest-16b.html colortest-16b.svg
 ```
 
-https://jordanbell.info/assets/images/colortest-16b.svg
+<https://jordanbell.info/assets/images/colortest-16b.svg>
 
 ```console
 wkhtmltoimage colortest-256.html colortest-256.svg
 ```
 
-https://jordanbell.info/assets/images/colortest-256.svg
+<https://jordanbell.info/assets/images/colortest-256.svg>
 
 
-## ImageMagick
+## xwd + ImageMagick convert
+
+https://www.x.org/archive/X11R7.5/doc/man/man1/xwd.1.html
+
+https://imagemagick.org/script/convert.php#gsc.tab=0
+
+Terminal 1:
+
+```bash
+colortest-8
+```
+
+Terminal 2:
+
+```bash
+xwd -out xwd-8.xwd
+```
+
+Click on terminal 1. This creates file xwd-8.xwd. Then use ImageMagick convert.
+
+```bash
+convert xwd-8.xwd xwd-8.png
+```
+
+The same process is done for colortest-16, colortest-16b, colortest-256.
+
+<https://jordanbell.info/assets/images/xwd-8.png>
+
+<https://jordanbell.info/assets/images/xwd-16.png>
+
+<https://jordanbell.info/assets/images/xwd-16b.png>
+
+<https://jordanbell.info/assets/images/xwd-256.png>
+
+## ImageMagick import
 
 https://imagemagick.org/script/import.php#gsc.tab=0
+
+Terminal 1:
+
+```bash
+colortest-256
+```
+
+```bash
+import import-256.png
+```
+
+We can either click on window, or select region.
+
+<https://jordanbell.info/assets/images/import-256.png>
+
+The same can be done for colortest-8, colortest-16, colortest-16b but we haven't.
+
+## shutter
+
+https://shutter-project.org/faq-help/man-page/
+
+Terminal 1 runs colortest.
+
+Terminal 2 runs shutter. We select window for terminal 1.
+
+```bash
+shutter -w -o shutter-8.png
+shutter -w -o shutter-16.png
+shutter -w -o shutter-16b.png
+shutter -w -o shutter-256.png
+```
+
+<https://jordanbell.info/assets/images/shutter-8.png>
+
+<https://jordanbell.info/assets/images/shutter-16.png>
+
+<https://jordanbell.info/assets/images/shutter-16b.png>
+
+<https://jordanbell.info/assets/images/shutter-256.png>
+
+
+## /dev/vcs
+
+https://linux.die.net/man/4/vcs
+
+https://manpages.ubuntu.com/manpages/noble/man1/screendump.1.html
+
+
 
 
 
@@ -150,22 +232,8 @@ https://imagemagick.org/script/import.php#gsc.tab=0
 https://manpages.ubuntu.com/manpages/jammy/man1/scrot.1.html
 
 
-## shutter
-
-https://shutter-project.org/
-
-## xwd
-
-https://www.x.org/archive/X11R7.5/doc/man/man1/xwd.1.html
-
-https://www.x.org/archive/X11R7.7/doc/man/man1/xwud.1.xhtml
 
 
-## /dev/vcs
-
-https://linux.die.net/man/4/vcs
-
-https://manpages.ubuntu.com/manpages/noble/man1/screendump.1.html
 
 
 ## /dev/fb0
