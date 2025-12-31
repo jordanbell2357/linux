@@ -47,6 +47,8 @@ File typescript does not have a SAUCE record.
 Processed in 0.008569 seconds.
 ```
 
+<https://jordanbell.info/assets/images/colortest-8.png>
+
 <img width="640" height="608" alt="colortest-8" src="https://github.com/user-attachments/assets/c6026e03-59ee-4ea4-884c-d97fe6f92cbe" />
 
 
@@ -54,6 +56,8 @@ Processed in 0.008569 seconds.
 script -O typescript -c "colortest-16" -q
 ansilove -o colortest-16.png typescript
 ```
+
+<https://jordanbell.info/assets/images/colortest-16.png>
 
 <img width="640" height="1120" alt="colortest-16" src="https://github.com/user-attachments/assets/d36e144b-c05f-4ff9-b73a-2f4f9166a00d" />
 
@@ -63,6 +67,8 @@ script -O typescript -c "colortest-16b" -q
 ansilove -o colortest-16b.png typescript
 ```
 
+<https://jordanbell.info/assets/images/colortest-16b.png>
+
 <img width="640" height="576" alt="colortest-16b" src="https://github.com/user-attachments/assets/3aa7c31e-a4be-4c1d-a009-ff1139a16fe9" />
 
 
@@ -71,8 +77,7 @@ script -O typescript -c "colortest-256" -q
 ansilove -o colortest-256.png typescript
 ```
 
-<img width="640" height="1216" alt="colortest-256" src="https://github.com/user-attachments/assets/4c41a0c3-5288-4601-8ab5-11b6469648b2" />
-
+<https://jordanbell.info/assets/images/colortest-256.png>
 
 ## aha
 
