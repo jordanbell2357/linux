@@ -99,6 +99,8 @@ colortest-16b | aha -b -t colortest-16b > colortest-16b.html
 colortest-256 | aha -b -t colortest-256 > colortest-256.html
 ```
 
+<https://jordanbell.info/assets/html/colortest-256.html>
+
 ### wkhtmltopdf
 
 https://wkhtmltopdf.org/
