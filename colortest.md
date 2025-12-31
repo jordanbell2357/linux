@@ -22,10 +22,6 @@ In other words, how to capture terminal output.
 
 <kbd>Alt</kbd>+<kbd>PrtSc</kbd>
 
-```bash
-colortest-256
-```
-
 <img width="1363" height="732" alt="image" src="https://github.com/user-attachments/assets/1e1ab1d8-5bd0-47d4-8165-279435f15c5b" />
 
 
