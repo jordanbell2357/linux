@@ -74,19 +74,6 @@ ansilove -o colortest-256.png typescript
 <img width="640" height="1216" alt="colortest-256" src="https://github.com/user-attachments/assets/4c41a0c3-5288-4601-8ab5-11b6469648b2" />
 
 
-```bash
-script -q -c "colortest-256"
-ansilove -o colortest-256.png typescript
-```
-
-<img width="640" height="1216" alt="colortest-256" src="https://github.com/user-attachments/assets/914ea7ff-6177-40fa-a595-95a08f270ee0" />
-
-
-## ImageMagick
-
-https://imagemagick.org/script/import.php#gsc.tab=0
-
-
 ## aha
 
 https://manpages.ubuntu.com/manpages/noble/man1/aha.1.html
@@ -143,6 +130,13 @@ wkhtmltoimage colortest-256.html colortest-256.svg
 ```
 
 https://jordanbell.info/assets/colortest-256.svg
+
+
+## ImageMagick
+
+https://imagemagick.org/script/import.php#gsc.tab=0
+
+
 
 ## scrot
 
