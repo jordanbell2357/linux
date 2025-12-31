@@ -25,24 +25,53 @@ In other words, how to capture terminal output.
 <img width="1363" height="732" alt="image" src="https://github.com/user-attachments/assets/1e1ab1d8-5bd0-47d4-8165-279435f15c5b" />
 
 
-## scrot
-
-https://manpages.ubuntu.com/manpages/jammy/man1/scrot.1.html
-
-
-## script and ansilove
+## script + ansilove
 
 https://man7.org/linux/man-pages/man1/script.1.html
 
 https://manpages.ubuntu.com/manpages/noble/en/man1/ansilove.1.html
 
-
 ```bash
-script -q -c "colortest-16"
-ansilove typescript
+script -O typescript -c "colortest-8" -q
 ```
 
-<img width="640" height="1120" alt="typescript" src="https://github.com/user-attachments/assets/0c8211d0-caa8-453a-b83c-aec76912a80e" />
+```console
+ubuntu@laptop:~$ ansilove -o colortest-8.png typescript
+Input File: typescript
+Output File: colortest-8.png
+Font: 80x25
+Bits: 8
+Columns: 80
+
+File typescript does not have a SAUCE record.
+Processed in 0.008569 seconds.
+```
+
+<img width="640" height="608" alt="colortest-8" src="https://github.com/user-attachments/assets/c6026e03-59ee-4ea4-884c-d97fe6f92cbe" />
+
+
+```bash
+script -O typescript -c "colortest-16" -q
+ansilove -o colortest-16.png typescript
+```
+
+<img width="640" height="1120" alt="colortest-16" src="https://github.com/user-attachments/assets/d36e144b-c05f-4ff9-b73a-2f4f9166a00d" />
+
+
+```bash
+script -O typescript -c "colortest-16b" -q
+ansilove -o colortest-16b.png typescript
+```
+
+<img width="640" height="576" alt="colortest-16b" src="https://github.com/user-attachments/assets/3aa7c31e-a4be-4c1d-a009-ff1139a16fe9" />
+
+
+```bash
+script -O typescript -c "colortest-256" -q
+ansilove -o colortest-256.png typescript
+```
+
+<img width="640" height="1216" alt="colortest-256" src="https://github.com/user-attachments/assets/4c41a0c3-5288-4601-8ab5-11b6469648b2" />
 
 
 ```bash
@@ -60,21 +89,65 @@ https://imagemagick.org/script/import.php#gsc.tab=0
 
 ## aha
 
+https://manpages.ubuntu.com/manpages/noble/man1/aha.1.html
+
 ```bash
-colortest-16 | aha -b > colortest-16.html
+colortest-8 | aha -b -t colortest-8 > colortest-8.html
+```
+
+```bash
+colortest-16 | aha -b -t colortest-16 > colortest-16.html
 ```
 
 <https://jordanbell.info/assets/html/colortest-16.html>
 
 ```bash
-colortest-16b | aha -b > colortest-16b.html
+colortest-16b | aha -b -t colortest-16b > colortest-16b.html
 ```
 
 <https://jordanbell.info/assets/html/colortest-16b.html>
 
+
+```bash
+colortest-256 | aha -b -t colortest-256 > colortest-256.html
+```
+
 ### wkhtmltopdf
 
 https://wkhtmltopdf.org/
+
+https://manpages.ubuntu.com/manpages/noble/man1/wkhtmltoimage.1.html
+
+```bash
+wkhtmltoimage colortest-8.html colortest-8.svg
+```
+
+https://jordanbell.info/assets/colortest-8.svg
+
+
+```bash
+wkhtmltoimage colortest-16.html colortest-16.svg
+```
+
+https://jordanbell.info/assets/colortest-16.svg
+
+
+```bash
+wkhtmltoimage colortest-16b.html colortest-16b.svg
+```
+
+https://jordanbell.info/assets/colortest-16b.svg
+
+```console
+wkhtmltoimage colortest-256.html colortest-256.svg
+```
+
+https://jordanbell.info/assets/colortest-256.svg
+
+## scrot
+
+https://manpages.ubuntu.com/manpages/jammy/man1/scrot.1.html
+
 
 ## shutter
 
