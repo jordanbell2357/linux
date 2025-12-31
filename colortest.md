@@ -18,7 +18,7 @@ We use colortest as a place to examine ways to take screenshots in Linux.
 In other words, how to capture terminal output.
 
 
-## <kbd>Alt</kbd>+<kbd>PrtSc</kbd>
+## Alt+PrtSc
 
 <kbd>Alt</kbd>+<kbd>PrtSc</kbd>
 
