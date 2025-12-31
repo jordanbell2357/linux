@@ -111,27 +111,27 @@ https://manpages.ubuntu.com/manpages/noble/man1/wkhtmltoimage.1.html
 wkhtmltoimage colortest-8.html colortest-8.svg
 ```
 
-https://jordanbell.info/assets/colortest-8.svg
+https://jordanbell.info/assets/images/colortest-8.svg
 
 
 ```bash
 wkhtmltoimage colortest-16.html colortest-16.svg
 ```
 
-https://jordanbell.info/assets/colortest-16.svg
+https://jordanbell.info/assets/images/colortest-16.svg
 
 
 ```bash
 wkhtmltoimage colortest-16b.html colortest-16b.svg
 ```
 
-https://jordanbell.info/assets/colortest-16b.svg
+https://jordanbell.info/assets/images/colortest-16b.svg
 
 ```console
 wkhtmltoimage colortest-256.html colortest-256.svg
 ```
 
-https://jordanbell.info/assets/colortest-256.svg
+https://jordanbell.info/assets/images/colortest-256.svg
 
 
 ## ImageMagick
