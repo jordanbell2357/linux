@@ -28,7 +28,7 @@ WSL2:
 
 <https://jordanbell.info/assets/images/wsl2-alt-prtsc-256.png>
 
-GNOME on Hyper-V:
+GNOME on Ubuntu Desktop on Hyper-V:
 
 https://help.ubuntu.com/stable/ubuntu-help/screen-shot-record.html
 
@@ -51,7 +51,7 @@ We show this for colortest-16 and colortest-256.
 https://linux.die.net/man/1/gnome-screenshot
 
 
-GNOME on Hyper-V: Installing gnome-screenshot lets us invoke it from the command line with options.
+GNOME on Ubuntu Desktop on Hyper-V:: Installing gnome-screenshot lets us invoke it from the command line with options.
 
 `-w` captures current window:
 
@@ -276,6 +276,8 @@ https://linux.die.net/man/4/vcs
 
 https://manpages.ubuntu.com/manpages/noble/man1/screendump.1.html
 
+https://man7.org/linux/man-pages/man1/setterm.1.html
+
 We run Ubuntu using VirtualBox. We login to tty1 and run colortest-8.
 The following is a screenshot taken using VirtualBox:
 
@@ -292,6 +294,12 @@ or
 
 ```bash
 sudo screendump 1
+```
+
+or
+
+```bash
+sudo setterm --dump 1
 ```
 
 It shows the text output currently displayed on tty1, without color.
@@ -312,5 +320,20 @@ https://github.com/GunnarMonell/fbgrab
 https://askubuntu.com/questions/12208/can-i-take-a-screenshot-of-a-virtual-console
 
 
+We use Ubuntu Desktop on VMWare Workstation.
+From X11, we access a virtual console pressing <kbd>Fn</kbd>+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F3</kbd>, to get to tty3.
+We run colortest-8 in tty3.
 
+Then we enter tty4 using <kbd>Fn</kbd>+<kbd>Alt</kbd>+<kbd>F4</kbd>. We run 
 
+```bash
+sudo fbgrab -c 3 fbgrab-8.png
+```
+
+<https://jordanbell.info/assets/images/fbgrab-8.png>
+
+<https://jordanbell.info/assets/images/fbgrab-16.png>
+
+<https://jordanbell.info/assets/images/fbgrab-16b.png>
+
+<https://jordanbell.info/assets/images/fbgrab-256.png>
