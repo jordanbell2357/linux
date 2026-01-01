@@ -101,45 +101,84 @@ https://man7.org/linux/man-pages/man1/script.1.html
 
 https://manpages.ubuntu.com/manpages/noble/en/man1/ansilove.1.html
 
+The output of *script* is text with escape sequences and control sequences, namely "ANSI".
+
 ```bash
-script -O typescript -c "colortest-8" -q
+script -O typescript-8 -c "colortest-8" -q
 ```
 
 ```console
-ubuntu@laptop:~$ ansilove -o ansilove-8.png typescript
-Input File: typescript
+ubuntu@vm:~/Desktop$ ansilove -o ansilove-8.png typescript-8
+Input File: typescript-8
 Output File: ansilove-8.png
 Font: 80x25
 Bits: 8
 Columns: 80
 
-File typescript does not have a SAUCE record.
-Processed in 0.008569 seconds.
+File typescript-8 does not have a SAUCE record.
+
+Processed in 0.004059 seconds.
 ```
 
 <https://jordanbell.info/assets/images/ansilove-8.png>
 
 
 ```bash
-script -O typescript -c "colortest-16" -q
-ansilove -o ansilove-16.png typescript
+script -O typescript-16 -c "colortest-16" -q
+ansilove -o ansilove-16.png typescript-16
 ```
 
 <https://jordanbell.info/assets/images/ansilove-16.png>
 
 ```bash
-script -O typescript -c "colortest-16b" -q
-ansilove -o ansilove-16b.png typescript
+script -O typescript-16b -c "colortest-16b" -q
+ansilove -o ansilove-16b.png typescript-16b
 ```
 
 <https://jordanbell.info/assets/images/ansilove-16b.png>
 
 ```bash
-script -O typescript -c "colortest-256" -q
-ansilove -o ansilove-256.png typescript
+script -O typescript-256 -c "colortest-256" -q
+ansilove -o ansilove-256.png typescript-256
 ```
 
 <https://jordanbell.info/assets/images/ansilove-256.png>
+
+<https://jordanbell.info/assets/images/typescript-8>
+
+<https://jordanbell.info/assets/images/typescript-16>
+
+<https://jordanbell.info/assets/images/typescript-16b>
+
+<https://jordanbell.info/assets/images/typescript-256>
+
+
+## script + textimg
+
+https://github.com/jiro4989/textimg
+
+```bash
+wget https://github.com/jiro4989/textimg/releases/download/v3.1.9/textimg_3.1.9_amd64.deb
+sudo dpkg -i ./*.deb
+```
+
+We use the typescript (ANSI) output of *script*:
+
+```bash
+script -O typescript-8 -c "colortest-8" -q
+script -O typescript-16 -c "colortest-16" -q
+script -O typescript-16b -c "colortest-16b" -q
+script -O typescript-256 -c "colortest-256" -q
+```
+
+Then we make images from these typescript files using *textimg*.
+
+```bash
+textimg -o textimg-8.png < typescript-8
+textimg -o textimg-16.png < typescript-16
+textimg -o textimg-16b.png < typescript-16b
+textimg -o textimg-256.png < typescript-256
+```
 
 
 ## xterm
@@ -264,6 +303,24 @@ The same process is done for colortest-16, colortest-16b, colortest-256.
 <https://jordanbell.info/assets/images/xwd-16b.png>
 
 <https://jordanbell.info/assets/images/xwd-256.png>
+
+
+## Flameshot
+
+https://flameshot.org/docs/installation/installation-linux/
+
+Running `flameshot` in xterm opens Flameshot in the system tray in GNOME, which can be used interactively.
+
+Running `flamegui gui` in xterm opens the interactive interface.
+
+We select a region of the display to capture.
+
+```console
+ubuntu@vm:~/Desktop$ flameshot gui
+flameshot: info: Capture saved as /home/ubuntu/Desktop/flameshot-8.png
+```
+
+<https://jordanbell.info/assets/images/flameshot-8.png>
 
 
 ## ImageMagick import
