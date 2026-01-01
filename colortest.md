@@ -20,19 +20,23 @@ we will use vttest as an occasion to examine
 ways to take screencasts, or videos, in Linux.
 
 
-## PrtSc
+## Windows
 
-WSL2:
+WSL2
 
 <kbd>Alt</kbd>+<kbd>PrtSc</kbd>
 
 <https://jordanbell.info/assets/images/wsl2-alt-prtsc-256.png>
+
+## GNOME
 
 GNOME on Ubuntu Desktop on Hyper-V:
 
 https://help.ubuntu.com/stable/ubuntu-help/screen-shot-record.html
 
 https://help.gnome.org/gnome-help/screen-shot-record.html
+
+https://wiki.debian.org/ScreenShots
 
 <kbd>Shift</kbd>+<kbd>PrtSc</kbd> takes screenshot of entire screen and saves file to file like `~/Pictures/Screenshots/Screenshot from 2025-12-31 19-33-19.png`. If two screenshots are taken
 within the same second, the others are named with an additional hyphen and number like `Screenshot from 2025-12-31 19-33-19-1.png`.
