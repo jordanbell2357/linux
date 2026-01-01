@@ -28,15 +28,43 @@ WSL2:
 
 <img width="1363" height="732" alt="image" src="https://github.com/user-attachments/assets/1e1ab1d8-5bd0-47d4-8165-279435f15c5b" />
 
-
 GNOME on Hyper-V:
+
+https://help.ubuntu.com/stable/ubuntu-help/screen-shot-record.html
 
 <kbd>Shift</kbd>+<kbd>PrtSc</kbd> takes screenshot of entire screen and saves file to file `~/Pictures/Screenshots/Screenshot from 2025-12-31 19-33-19.png`. If two screenshots are taken
 within the same second, the others are named with an additional hyphen and number like `Screenshot from 2025-12-31 19-33-19-1.png`.
 
 <kbd>PrtSc</kbd> gives interactive tool to select window, region, or entire screen.
 
+We show this for colortest-16 and colortest-256.
 
+<https://jordanbell.info/assets/images/gnome-prtsc-16.png>
+
+<https://jordanbell.info/assets/images/gnome-prtsc-256.png>
+
+This seems to use GNOME Screenshot even if the package gnome-screenshot is not installed.
+
+
+## GNOME Screenshot
+
+https://linux.die.net/man/1/gnome-screenshot
+
+Installing gnome-screenshot lets us invoke it from the command line with options.
+
+`-w` captures current window:
+
+```bash
+gnome-screenshot -w
+```
+
+`-i` runs interactively:
+
+```bash
+gnome-screenshot -i
+```
+
+<https://jordanbell.info/assets/images/gnome-screenshot-8-i.png>
 
 
 ## script + ansilove
