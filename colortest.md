@@ -19,10 +19,13 @@ In other words, how to capture static terminal output. Another place,
 we will use vttest as an occasion to examine
 ways to take screencasts, or videos, in Linux.
 
+We use WSL in Windows, and Ubuntu as a virtual machine using VirtualBox, Hyper-V Manager,
+and VMWare Workstation.
+
 
 ## Windows
 
-WSL2
+WSL
 
 <kbd>Alt</kbd>+<kbd>PrtSc</kbd>
 
@@ -30,7 +33,7 @@ WSL2
 
 ## GNOME
 
-GNOME on Ubuntu Desktop on Hyper-V:
+GNOME on Ubuntu on Hyper-V:
 
 https://help.ubuntu.com/stable/ubuntu-help/screen-shot-record.html
 
@@ -52,10 +55,9 @@ We show this for colortest-16 and colortest-256.
 
 ## GNOME Screenshot
 
-https://linux.die.net/man/1/gnome-screenshot
+https://linux.die.net/man/1/gnome-screensho
 
-
-GNOME on Ubuntu Desktop on Hyper-V:: Installing gnome-screenshot lets us invoke it from the command line with options.
+GNOME on Ubuntu on Hyper-V:: Installing gnome-screenshot lets us invoke it from the command line with options.
 
 `-w` captures current window:
 
@@ -263,7 +265,7 @@ wkhtmltoimage aha-16b.html wkhtmltoimage-16b.svg
 
 <https://jordanbell.info/assets/images/wkhtmltoimage-16b.svg>
 
-```console
+```bash
 wkhtmltoimage aha-256.html wkhtmltoimage-256.svg
 ```
 
@@ -273,6 +275,8 @@ wkhtmltoimage aha-256.html wkhtmltoimage-256.svg
 ## xwd + ImageMagick convert
 
 https://www.x.org/archive/X11R7.5/doc/man/man1/xwd.1.html
+
+https://www.x.org/archive/X11R7.5/doc/man/man1/xwud.1.html
 
 https://imagemagick.org/script/convert.php#gsc.tab=0
 
@@ -288,7 +292,7 @@ Terminal 2:
 xwd -out xwd-8.xwd
 ```
 
-Click on terminal 1. This creates file xwd-8.xwd. Then use ImageMagick convert.
+Click on terminal 1. This creates file xwd-8.xwd and the program xwd terminates successfully. Then use ImageMagick convert.
 
 ```bash
 convert xwd-8.xwd xwd-8.png
@@ -304,6 +308,9 @@ The same process is done for colortest-16, colortest-16b, colortest-256.
 
 <https://jordanbell.info/assets/images/xwd-256.png>
 
+*xwud* is a native viewer of *xwd* output.
+
+<https://jordanbell.info/assets/images/xwud-256.png>
 
 ## Flameshot
 
@@ -399,6 +406,7 @@ take-vector-screenshot
 
 <https://jordanbell.info/assets/images/gtk-vector-screenshot-256.pdf>
 
+
 ## /dev/vcs
 
 https://linux.die.net/man/4/vcs
@@ -466,3 +474,24 @@ sudo fbgrab -c 3 fbgrab-8.png
 <https://jordanbell.info/assets/images/fbgrab-16b.png>
 
 <https://jordanbell.info/assets/images/fbgrab-256.png>
+
+We also use `fbcat` directly in tty3.
+
+```bash
+colortest-8
+sudo fbcat > fbcat-8.ppm
+```
+
+and likewise for the other colortest programs. After each execution, we
+press <kbd>Ctrl</kbd>+<kbd>l</kbd>.
+
+<https://jordanbell.info/assets/images/fbcat-8.ppm>
+
+<https://jordanbell.info/assets/images/fbcat-16.ppm>
+
+<https://jordanbell.info/assets/images/fbcat-16b.ppm>
+
+<https://jordanbell.info/assets/images/fbcat-256.ppm>
+
+
+
