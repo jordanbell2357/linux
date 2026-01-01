@@ -5,6 +5,31 @@ https://invisible-island.net/vttest/
 We use vttest as an occasion to use different screen recording or video capture programs.
 
 
+## script
+
+https://man7.org/linux/man-pages/man1/script.1.html
+
+https://man7.org/linux/man-pages/man1/scriptreplay.1.html
+
+```bash
+script -T script-vttest-log -q script-vttest
+```
+
+In the script session, we execute
+
+```bash
+tty
+vttest
+^d
+```
+
+We run `scriptreplay` to view the script session.
+
+```bash
+scriptreplay -T script-tty-2-log -O script-tty-2
+```
+
+
 ## ttyrec
 
 http://0xcc.net/ttyrec/
@@ -18,25 +43,52 @@ https://manpages.ubuntu.com/manpages/noble/man1/ttyrec.1.html
 https://manpages.ubuntu.com/manpages/noble/man1/ttyplay.1.html
 
 ```bash
-ttyrec ttyrec-vttest-2
+ttyrec ttyrec-vttest-2.tty
 vttest
 ```
 
 ```bash
-ttyrec ttyrec-vttest-3
+ttyrec ttyrec-vttest-3.tty
 vttest
 ```
 
 ```bash
-ttyrec ttyrec-vttest-4
+ttyrec ttyrec-vttest-4.tty
 vttest
 ```
 
 
 ```bash
-ttyrec ttyrec-vttest-5
+ttyrec ttyrec-vttest-5.tty
 vttest
 ```
+
+https://rlgallery.org/about/ttyrec.html
+
+> TTYREC files are recordings of text-based sessions, much like screencasts are recordings of graphical sessions. The Roguelike Gallery and other roguelike sites create ttyrec recordings of games played online, so that others can watch them.
+
+These ttyrec files can then be played using ttyplay, e.g.
+
+```bash
+ttyplay ttyrec-vttest-2.tty
+```
+
+## ipbt
+
+https://manpages.ubuntu.com/manpages/noble/man1/ipbt.1.html
+
+```bash
+sudo apt install its-playback-time
+```
+
+Display ttyrec-vttest-2.tty by running
+
+```bash
+ipbt ttyrec-vttest-2.tty
+```
+
+and then pressing <kbd>Space</kbd> to progress through frames.
+
 
 ## Tera Term
 
@@ -53,4 +105,5 @@ https://teratermproject.github.io/manual/5/en/usage/ttyrec.html
 > The TTXttyplay plug-in replays the data recorded by the TTXttyrec plug-in. Select the TTY Replay under File menu and the opening dialog is shown. specify a recorded file and the recorded data will replay. The Tera Term 4.60 or later needs to use the TTXttyplay plug-in.
 >
 > The data format is same as the ttyrec. The data recorded by the TTXttyrec plug-in can replay by using the ttyplay command. The data recorded by the ttyrec command can replay by using the TTXttyplay plug-in.
+
 
