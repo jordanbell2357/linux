@@ -138,6 +138,30 @@ ansilove -o ansilove-256.png typescript
 <https://jordanbell.info/assets/images/ansilove-256.png>
 
 
+## xterm
+
+https://invisible-island.net/xterm/manpage/xterm.html
+
+https://stackoverflow.com/questions/29987557/xterm-dump-of-full-scrollable-window-content
+
+```bash
+xterm -l -lf xterm-8.ans
+```
+
+This opens an xterminal window. In it we run colortest and exit, and this creates a text file
+with ANSI escape codes, xterm-8.ans. We do the same for colortest-16, colortest-16b, colortest-256.
+
+<https://jordanbell.info/assets/images/xterm-8.ans>
+
+<https://jordanbell.info/assets/images/xterm-16.ans>
+
+<https://jordanbell.info/assets/images/xterm-16b.ans>
+
+<https://jordanbell.info/assets/images/xterm-256.ans>
+
+
+
+
 ## aha
 
 https://manpages.ubuntu.com/manpages/noble/man1/aha.1.html
