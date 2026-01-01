@@ -80,15 +80,15 @@ https://www.gnu.org/software/screen/manual/screen.html#Hardcopy
 
 We run screen and run colortest-8 in the screen session.
 
-We press <kbd>Ctrl</kbd>+<kbd>a</kbd>, then <kbd>:</kbd>, then `hardcopy -h screen-8.out`.
+We press <kbd>Ctrl</kbd>+<kbd>a</kbd>, then <kbd>:</kbd>, then `hardcopy -h screen-8.txt`.
 
-The file `screen-8.out` is the text in the scrollback color, without color. We end the screen session using <kbd>Ctrl</kbd>+<kbd>d</kbd>
+The file `screen-8.txt` is the text in the scrollback color, without color. We end the screen session using <kbd>Ctrl</kbd>+<kbd>d</kbd>
 
-<https://jordanbell.info/assets/images/screen-8.out>
+<https://jordanbell.info/assets/images/screen-8.txt>
 
-We do the same for colortest-16b to make `screen-16b.out`.
+We do the same for colortest-16b.
 
-<https://jordanbell.info/assets/images/screen-16b.out>
+<https://jordanbell.info/assets/images/screen-16b.txt>
 
 
 ## script + ansilove
