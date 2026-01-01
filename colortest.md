@@ -115,6 +115,25 @@ ansilove -o ansilove-256.png typescript
 <https://jordanbell.info/assets/images/ansilove-256.png>
 
 
+## GNU Screen
+
+https://www.gnu.org/software/screen/manual/screen.html#Hardcopy
+
+> Command: hardcopy [-h] [file]
+>
+> (C-a h)
+> 
+> Writes out the currently displayed image to the file `file`, or, if no filename is specified, to **hardcopy.*n*** in the default directory, where *n* is the number of the current window. This either appends or overwrites the file if it exists, as determined by the `hardcopy_append command`. If the option `-h` is specified, dump also the contents of the scrollback buffer.
+
+We run screen and run colortest-8 in the screen session.
+
+We press <kbd>Ctrl</kbd>+<kbd>a</kbd>, then <kbd>:</kbd>, then `hardcopy -h screen-8.out`.
+
+The file `screen-8.out` is the text in the scrollback color, without color. We end the screen session using <kbd>Ctrl</kbd>+<kbd>d</kbd>
+
+<https://jordanbell.info/assets/images/screen-8.out>
+
+
 ## aha
 
 https://manpages.ubuntu.com/manpages/noble/man1/aha.1.html
