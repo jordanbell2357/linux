@@ -300,6 +300,14 @@ convert xwd-8.xwd xwd-8.png
 
 The same process is done for colortest-16, colortest-16b, colortest-256.
 
+<https://jordanbell.info/assets/images/xwd-8.xwd>
+
+<https://jordanbell.info/assets/images/xwd-16.xwd>
+
+<https://jordanbell.info/assets/images/xwd-16b.xwd>
+
+<https://jordanbell.info/assets/images/xwd-256.xwd>
+
 <https://jordanbell.info/assets/images/xwd-8.png>
 
 <https://jordanbell.info/assets/images/xwd-16.png>
@@ -309,6 +317,10 @@ The same process is done for colortest-16, colortest-16b, colortest-256.
 <https://jordanbell.info/assets/images/xwd-256.png>
 
 *xwud* is a native viewer of *xwd* output.
+
+```bash
+xwud xwd-256.xwd
+```
 
 <https://jordanbell.info/assets/images/xwud-256.png>
 
