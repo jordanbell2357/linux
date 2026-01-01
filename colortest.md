@@ -50,7 +50,8 @@ We show this for colortest-16 and colortest-256.
 
 https://linux.die.net/man/1/gnome-screenshot
 
-Installing gnome-screenshot lets us invoke it from the command line with options.
+
+GNOME on Hyper-V: Installing gnome-screenshot lets us invoke it from the command line with options.
 
 `-w` captures current window:
 
@@ -177,7 +178,6 @@ wkhtmltoimage aha-256.html wkhtmltoimage-256.svg
 <https://jordanbell.info/assets/images/wkhtmltoimage-256.svg>
 
 
-
 ## xwd + ImageMagick convert
 
 https://www.x.org/archive/X11R7.5/doc/man/man1/xwd.1.html
@@ -270,6 +270,36 @@ scrot -s scrot-256.png
 
 <https://jordanbell.info/assets/images/scrot-256.png>
 
+## /dev/vcs
+
+https://linux.die.net/man/4/vcs
+
+https://manpages.ubuntu.com/manpages/noble/man1/screendump.1.html
+
+We run Ubuntu using VirtualBox. We login to tty1 and run colortest-8.
+The following is a screenshot taken using VirtualBox:
+
+<https://jordanbell.info/assets/images/vcs-tty1.png>
+
+We switch to tty2 by <kbd>Fn</kbd>+<kbd>Alt</kbd>+<kbd>F2</kbd>, login
+and run
+
+```bash
+sudo cat /dev/vcs1
+```
+
+or
+
+```bash
+sudo screendump 1
+```
+
+It shows the text output currently displayed on tty1, without color.
+
+The following is a screenshot taken using VirtualBox:
+
+<https://jordanbell.info/assets/images/vcs-tty2.png>
+
 
 ## /dev/fb0
 
@@ -282,9 +312,5 @@ https://github.com/GunnarMonell/fbgrab
 https://askubuntu.com/questions/12208/can-i-take-a-screenshot-of-a-virtual-console
 
 
-## /dev/vcs
 
-https://linux.die.net/man/4/vcs
-
-https://manpages.ubuntu.com/manpages/noble/man1/screendump.1.html
 
