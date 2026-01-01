@@ -18,13 +18,25 @@ We use colortest as an occasion to examine ways to take screenshots in Linux.
 In other words, how to capture terminal output.
 
 
-## Alt+PrtSc
+## PrtSc
+
+WSL2:
 
 <kbd>Alt</kbd>+<kbd>PrtSc</kbd>
 
-<https://jordanbell.info/assets/images/alt-prtsc-256.png>
+<https://jordanbell.info/assets/images/wsl2-alt-prtsc-256.png>
 
 <img width="1363" height="732" alt="image" src="https://github.com/user-attachments/assets/1e1ab1d8-5bd0-47d4-8165-279435f15c5b" />
+
+
+GNOME on Hyper-V:
+
+<kbd>Shift</kbd>+<kbd>PrtSc</kbd> takes screenshot of entire screen and saves file to file `~/Pictures/Screenshots/Screenshot from 2025-12-31 19-33-19.png`. If two screenshots are taken
+within the same second, the others are named with an additional hyphen and number like `Screenshot from 2025-12-31 19-33-19-1.png`.
+
+<kbd>PrtSc</kbd> gives interactive tool to select window, region, or entire screen.
+
+
 
 
 ## script + ansilove
@@ -246,7 +258,9 @@ https://docs.kernel.org/fb/framebuffer.html
 [fbgrab](https://github.com/GunnarMonell/fbgrab)
 
 
+## fbgrab and fbcat
 
+https://askubuntu.com/questions/12208/can-i-take-a-screenshot-of-a-virtual-console
 
 
 ## /dev/vcs
