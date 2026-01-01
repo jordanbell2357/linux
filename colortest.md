@@ -270,6 +270,25 @@ scrot -s scrot-256.png
 
 <https://jordanbell.info/assets/images/scrot-256.png>
 
+
+## gtk-vector-screenshot
+
+https://github.com/nomeata/gtk-vector-screenshot
+
+In one xterm we run colortest and in another we run `take-vector-screenshot`. We click on the first xterm window and save the screenshot as PDF.
+
+```bash
+take-vector-screenshot
+```
+
+<https://jordanbell.info/assets/images/gtk-vector-screenshot-8.pdf>
+
+<https://jordanbell.info/assets/images/gtk-vector-screenshot-16.pdf>
+
+<https://jordanbell.info/assets/images/gtk-vector-screenshot-16b.pdf>
+
+<https://jordanbell.info/assets/images/gtk-vector-screenshot-256.pdf>
+
 ## /dev/vcs
 
 https://linux.die.net/man/4/vcs
