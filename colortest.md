@@ -32,7 +32,7 @@ GNOME on Hyper-V:
 
 https://help.ubuntu.com/stable/ubuntu-help/screen-shot-record.html
 
-<kbd>Shift</kbd>+<kbd>PrtSc</kbd> takes screenshot of entire screen and saves file to file `~/Pictures/Screenshots/Screenshot from 2025-12-31 19-33-19.png`. If two screenshots are taken
+<kbd>Shift</kbd>+<kbd>PrtSc</kbd> takes screenshot of entire screen and saves file to file like `~/Pictures/Screenshots/Screenshot from 2025-12-31 19-33-19.png`. If two screenshots are taken
 within the same second, the others are named with an additional hyphen and number like `Screenshot from 2025-12-31 19-33-19-1.png`.
 
 <kbd>PrtSc</kbd> gives interactive tool to select window, region, or entire screen.
