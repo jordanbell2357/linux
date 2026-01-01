@@ -55,7 +55,7 @@ We show this for colortest-16 and colortest-256.
 
 ## GNOME Screenshot
 
-https://linux.die.net/man/1/gnome-screensho
+https://linux.die.net/man/1/gnome-screenshot
 
 GNOME on Ubuntu on Hyper-V:: Installing gnome-screenshot lets us invoke it from the command line with options.
 
