@@ -163,7 +163,9 @@ with ANSI escape codes, xterm-8.ans. We do the same for colortest-16, colortest-
 
 <https://jordanbell.info/assets/images/xterm-256.ans>
 
+These can be viewed using cat in Linux and in Windows using cat in PowerShell.
 
+<https://jordanbell.info/assets/images/powershell-8.png>
 
 
 ## aha
