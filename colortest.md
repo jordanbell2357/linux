@@ -28,8 +28,6 @@ WSL2:
 
 <https://jordanbell.info/assets/images/wsl2-alt-prtsc-256.png>
 
-<img width="1363" height="732" alt="image" src="https://github.com/user-attachments/assets/1e1ab1d8-5bd0-47d4-8165-279435f15c5b" />
-
 GNOME on Hyper-V:
 
 https://help.ubuntu.com/stable/ubuntu-help/screen-shot-record.html
@@ -93,8 +91,6 @@ Processed in 0.008569 seconds.
 
 <https://jordanbell.info/assets/images/ansilove-8.png>
 
-<img width="640" height="608" alt="colortest-8" src="https://github.com/user-attachments/assets/c6026e03-59ee-4ea4-884c-d97fe6f92cbe" />
-
 
 ```bash
 script -O typescript -c "colortest-16" -q
@@ -103,18 +99,12 @@ ansilove -o ansilove-16.png typescript
 
 <https://jordanbell.info/assets/images/ansilove-16.png>
 
-<img width="640" height="1120" alt="colortest-16" src="https://github.com/user-attachments/assets/d36e144b-c05f-4ff9-b73a-2f4f9166a00d" />
-
-
 ```bash
 script -O typescript -c "colortest-16b" -q
 ansilove -o ansilove-16b.png typescript
 ```
 
 <https://jordanbell.info/assets/images/ansilove-16b.png>
-
-<img width="640" height="576" alt="colortest-16b" src="https://github.com/user-attachments/assets/3aa7c31e-a4be-4c1d-a009-ff1139a16fe9" />
-
 
 ```bash
 script -O typescript -c "colortest-256" -q
