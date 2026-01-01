@@ -15,7 +15,9 @@ sudo apt install colortest
 ```
 
 We use colortest as an occasion to examine ways to take screenshots in Linux.
-In other words, how to capture terminal output.
+In other words, how to capture static terminal output. Another place,
+we will use vttest as an occasion to examine
+ways to take screencasts, or videos, in Linux.
 
 
 ## PrtSc
@@ -32,6 +34,8 @@ GNOME on Hyper-V:
 
 https://help.ubuntu.com/stable/ubuntu-help/screen-shot-record.html
 
+https://help.gnome.org/gnome-help/screen-shot-record.html
+
 <kbd>Shift</kbd>+<kbd>PrtSc</kbd> takes screenshot of entire screen and saves file to file like `~/Pictures/Screenshots/Screenshot from 2025-12-31 19-33-19.png`. If two screenshots are taken
 within the same second, the others are named with an additional hyphen and number like `Screenshot from 2025-12-31 19-33-19-1.png`.
 
@@ -42,8 +46,6 @@ We show this for colortest-16 and colortest-256.
 <https://jordanbell.info/assets/images/gnome-prtsc-16.png>
 
 <https://jordanbell.info/assets/images/gnome-prtsc-256.png>
-
-This seems to use GNOME Screenshot even if the package gnome-screenshot is not installed.
 
 
 ## GNOME Screenshot
@@ -283,10 +285,9 @@ scrot -s scrot-256.png
 
 https://docs.kernel.org/fb/framebuffer.html
 
-[fbgrab](https://github.com/GunnarMonell/fbgrab)
+https://github.com/jwilk/fbcat
 
-
-## fbgrab and fbcat
+https://github.com/GunnarMonell/fbgrab
 
 https://askubuntu.com/questions/12208/can-i-take-a-screenshot-of-a-virtual-console
 
@@ -296,8 +297,4 @@ https://askubuntu.com/questions/12208/can-i-take-a-screenshot-of-a-virtual-conso
 https://linux.die.net/man/4/vcs
 
 https://manpages.ubuntu.com/manpages/noble/man1/screendump.1.html
-
-
-## asciinema
-
 
