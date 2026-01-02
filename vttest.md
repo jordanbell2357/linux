@@ -11,22 +11,26 @@ https://man7.org/linux/man-pages/man1/script.1.html
 
 https://man7.org/linux/man-pages/man1/scriptreplay.1.html
 
-```bash
-script -T script-vttest-log -q script-vttest
+```console
+ubuntu@laptop:~$ tty
+/dev/pts/0
+ubuntu@laptop:~$ script -T script-vttest-log -q script-vttest
+ubuntu@laptop:~$ tty
+/dev/pts/2
+ubuntu@laptop:~$ vttest
 ```
 
-In the script session, we execute
+We end the script session pressing <kbd>Ctrl</kbd>+<kbd>d</kbd>.
+
 
 ```bash
-tty
-vttest
-^d
+script -T script-vttest-log -q script-vttest
 ```
 
 We run `scriptreplay` to view the script session.
 
 ```bash
-scriptreplay -T script-tty-2-log -O script-tty-2
+scriptreplay -T script-vttest-log -O script-vttest
 ```
 
 
@@ -43,23 +47,7 @@ https://manpages.ubuntu.com/manpages/noble/man1/ttyrec.1.html
 https://manpages.ubuntu.com/manpages/noble/man1/ttyplay.1.html
 
 ```bash
-ttyrec ttyrec-vttest-2.tty
-vttest
-```
-
-```bash
-ttyrec ttyrec-vttest-3.tty
-vttest
-```
-
-```bash
-ttyrec ttyrec-vttest-4.tty
-vttest
-```
-
-
-```bash
-ttyrec ttyrec-vttest-5.tty
+ttyrec ttyrec-vttest.tty
 vttest
 ```
 
@@ -72,6 +60,9 @@ These ttyrec files can then be played using ttyplay, e.g.
 ```bash
 ttyplay ttyrec-vttest-2.tty
 ```
+
+<https://jordanbell.info/assets/videos/ttyrec-vttest-2.tty>
+
 
 ## ipbt
 
