@@ -182,7 +182,6 @@ textimg -o textimg-16b.png < typescript-16b
 textimg -o textimg-256.png < typescript-256
 ```
 
-
 ## xterm
 
 https://invisible-island.net/xterm/manpage/xterm.html
@@ -207,6 +206,39 @@ with ANSI escape codes, xterm-8.ans. We do the same for colortest-16, colortest-
 These can be viewed using cat in Linux and in Windows using cat in PowerShell.
 
 <https://jordanbell.info/assets/images/powershell-8.png>
+
+
+## Ansifilter
+
+https://manpages.ubuntu.com/manpages/jammy/man1/ansifilter.1.html
+
+http://andre-simon.de/doku/ansifilter/en/ansifilter.php
+
+Using Ansifilter Windows GUI with TTY colortest-8 and colortest-16b output.
+
+<https://jordanbell.info/assets/images/ansifilter-gui-8.png>
+
+<https://jordanbell.info/assets/images/ansifilter-gui-16b.png>
+
+Using Ansifilter with xterm output.
+
+```bash
+ansifilter -i xterm-8.ans -o ansifilter-8.html --html
+ansifilter -i xterm-16.ans -o ansifilter-16.html --html
+ansifilter -i xterm-16b.ans -o ansifilter-16b.html --html
+ansifilter -i xterm-256.ans -o ansifilter-256.html --html
+```
+
+
+## PabloDraw
+
+https://github.com/cwensley/pablodraw
+
+Windows GUI
+
+It requires us to have file extensions to open a file. We demonstrate copying typescript-8 to typescript-8.ans and opening in PabloDraw.
+
+<https://jordanbell.info/assets/images/pablodraw-8.png>
 
 
 ## aha
