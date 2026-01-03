@@ -241,6 +241,23 @@ It requires us to have file extensions to open a file. We demonstrate copying ty
 <https://jordanbell.info/assets/images/pablodraw-8.png>
 
 
+## Moebius
+
+https://blocktronics.github.io/moebius/
+
+Windows GUI
+
+We demonstrate with typescript-8 and typescript-16. We show the files viewed in Moebius and also supply the PNG exports Moebius can make of ANSI files.
+
+<https://jordanbell.info/assets/images/moebius-8.png>
+
+<https://jordanbell.info/assets/images/moebius-16.png>
+
+<https://jordanbell.info/assets/images/moebius-export-8.png>
+
+<https://jordanbell.info/assets/images/moebius-export-16.png>
+
+
 ## aha
 
 https://manpages.ubuntu.com/manpages/noble/man1/aha.1.html
