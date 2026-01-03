@@ -230,6 +230,42 @@ ansifilter -i xterm-256.ans -o ansifilter-256.html --html
 ```
 
 
+## ANSiMat
+
+https://sourceforge.net/projects/ansimat/
+
+We run ansimat.exe in Windows PowerShell.
+
+```
+.\ansimat.exe typescript-8
+```
+
+```
+.\ansimat.exe typescript-16
+```
+
+<https://jordanbell.info/assets/images/ansimat-8.png>
+
+<https://jordanbell.info/assets/images/ansimat-16.png>
+
+
+## ASCII Art Studio
+
+https://www.torchsoft.com/en/aas_information.html
+
+Windows GUI
+
+We show the display of typescript-8 and typescript-16 in ASCII Art Studio and then show the exported images made by ASCII Art Studio.
+
+<https://jordanbell.info/assets/images/asciistudio-8.png>
+
+<https://jordanbell.info/assets/images/asciistudio-16.png>
+
+<https://jordanbell.info/assets/images/asciistudio-8-export.gif>
+
+<https://jordanbell.info/assets/images/asciistudio-16-export.gif>
+
+
 ## PabloDraw
 
 https://github.com/cwensley/pablodraw
