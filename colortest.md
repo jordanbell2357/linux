@@ -229,6 +229,13 @@ ansifilter -i xterm-16b.ans -o ansifilter-16b.html --html
 ansifilter -i xterm-256.ans -o ansifilter-256.html --html
 ```
 
+<https://jordanbell.info/assets/images/ansifilter-8.html>
+
+<https://jordanbell.info/assets/images/ansifilter-16.html>
+
+<https://jordanbell.info/assets/images/ansifilter-16b.html>
+
+<https://jordanbell.info/assets/images/ansifilter-256.html>
 
 ## ANSiMat
 
